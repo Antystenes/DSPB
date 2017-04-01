@@ -1,0 +1,3011 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-01 23:26:52.265635095 UTC
+
+interface DSPB-0.1.0.0-IzuWE0A9uXqKGPPquzCxk7:Lib 8002
+  interface hash: 643b4e560fd2194fed53cd633b9bbc17
+  ABI hash: 0d907e4647303f99d561393fa032aa95
+  export-list hash: da0aa71781bbb3c130244439f0a72cad
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: c31e31a2316a7b8e52f7ab3c56de92da
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.appendToLine
+  Lib.changeCent
+  Lib.changeMid
+  Lib.conwayUpdate
+  Lib.counts
+  Lib.gridConfigurations
+  Lib.height
+  Lib.horizNeighb
+  Lib.horizontalConfigurations
+  Lib.limap
+  Lib.lowerNeighb
+  Lib.mooresNeighb
+  Lib.moveDownGrid
+  Lib.moveLeftGrid
+  Lib.moveLeftLine
+  Lib.moveRightGrid
+  Lib.moveRightLine
+  Lib.moveUpGrid
+  Lib.sampleGrid
+  Lib.sampleLine
+  Lib.simulationGOF
+  Lib.someFunc
+  Lib.upperNeighb
+  Lib.width
+  Lib.Cell{Lib.Alive Lib.Dead}
+  Lib.Drawable{Lib.draw}
+  Lib.Grid{Lib.Grid _down _mid _up}
+  Lib.Line{Lib.Line _center _left _right}
+module dependencies:
+package dependencies: GLURaw-2.0.0.3@GLURaw-2.0.0.3-G12M6COyQIU5WfRlrIwPuj
+                      GLUT-2.7.0.11@GLUT-2.7.0.11-IP0PzJz4wI8KYXyKTnttpl
+                      ObjectName-1.1.0.1@ObjectName-1.1.0.1-EiFOWjUQWWuLyOhtrmuIWX
+                      OpenGL-3.0.1.0@OpenGL-3.0.1.0-BckrJgI63aX3I0VRJxU6fY
+                      OpenGLRaw-3.2.4.0@OpenGLRaw-3.2.4.0-JDyGgOXR61GG549SwmWm2Q
+                      StateVar-1.1.0.4@StateVar-1.1.0.4-5dJbnTVECtEAhfJXPZKdbO
+                      adjunctions-4.3@adjunctions-4.3-7bX590WM0JqI4H9GMcNEBq
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      base-orphans-0.5.4@base-orphans-0.5.4-ABoxiBf7nXc7Qqh66CgYc9
+                      bifunctors-5.4.1@bifunctors-5.4.1-LZeQTL0Uaws6v2aJY5STuc
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bmp-1.2.6.3@bmp-1.2.6.3-43OLkH0uuwm831pBFpx2PZ
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      comonad-5@comonad-5-BYydH82fZIS1vK4HJ9v9HH
+                      containers-0.5.7.1@containers-0.5.7.1
+                      contravariant-1.4@contravariant-1.4-3UCY3arLvoG71jrGOYoc39
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      distributive-0.5.2@distributive-0.5.2-JCgfTXNR3ywAyV7fFWIBI5
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      fixed-0.2.1.1@fixed-0.2.1.1-8Jr82l0kss5Gr4nEevmXlZ
+                      free-4.12.4@free-4.12.4-C89MffdE5zK8lCuYhh5BJR
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      gloss-1.10.2.5@gloss-1.10.2.5-Cjq2LIsB60XBDXiLGr6ISz
+                      gloss-rendering-1.10.3.5@gloss-rendering-1.10.3.5-4njwxhM0L51DDTj3f5QCty
+                      half-0.2.2.3@half-0.2.2.3-GHJ372Ls7FBA3PAGtGHfOR
+                      hashable-1.2.6.0@hashable-1.2.6.0-3EXxoqeEgbfAKr6aGkye6x
+                      integer-gmp-1.0.0.1
+                      kan-extensions-5.0.1@kan-extensions-5.0.1-GfRgigRS3IhJiXd1UYYFjj
+                      lens-4.15.1@lens-4.15.1-2bPnjHpJoHy2zLogJCwNGD
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      prelude-extras-0.4.0.3@prelude-extras-0.4.0.3-BhL9U5k7NtGJn1itwIHt2Y
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH
+                      profunctors-5.2@profunctors-5.2-E83rhkBRsJE8oBXYAZAqjZ
+                      reflection-2.1.2@reflection-2.1.2-Bem12O1xFGSHr4C2Hyu1c4
+                      semigroupoids-5.1@semigroupoids-5.1-IViIK2AEZZs10fiaW8ySWi
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      template-haskell-2.11.1.0
+                      text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      transformers-compat-0.5.1.4@transformers-compat-0.5.1.4-IuFogs8HAVUJBWVNMhtssu
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-1XEErQCPPPc2SEtcHHNx9o
+                      vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         gloss-rendering-1.10.3.5@gloss-rendering-1.10.3.5-4njwxhM0L51DDTj3f5QCty:Graphics.Gloss.Internals.Data.Picture
+         hashable-1.2.6.0@hashable-1.2.6.0-3EXxoqeEgbfAKr6aGkye6x:Data.Hashable.Generic
+         reflection-2.1.2@reflection-2.1.2-Bem12O1xFGSHr4C2Hyu1c4:Data.Reflection
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Show
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Fusion.Bundle
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+family instance modules: adjunctions-4.3@adjunctions-4.3-7bX590WM0JqI4H9GMcNEBq:Data.Functor.Rep
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         bifunctors-5.4.1@bifunctors-5.4.1-LZeQTL0Uaws6v2aJY5STuc:Data.Bifunctor.Biff
+                         bifunctors-5.4.1@bifunctors-5.4.1-LZeQTL0Uaws6v2aJY5STuc:Data.Bifunctor.Clown
+                         bifunctors-5.4.1@bifunctors-5.4.1-LZeQTL0Uaws6v2aJY5STuc:Data.Bifunctor.Flip
+                         bifunctors-5.4.1@bifunctors-5.4.1-LZeQTL0Uaws6v2aJY5STuc:Data.Bifunctor.Join
+                         bifunctors-5.4.1@bifunctors-5.4.1-LZeQTL0Uaws6v2aJY5STuc:Data.Bifunctor.Joker
+                         bifunctors-5.4.1@bifunctors-5.4.1-LZeQTL0Uaws6v2aJY5STuc:Data.Bifunctor.Product
+                         bifunctors-5.4.1@bifunctors-5.4.1-LZeQTL0Uaws6v2aJY5STuc:Data.Bifunctor.Sum
+                         bifunctors-5.4.1@bifunctors-5.4.1-LZeQTL0Uaws6v2aJY5STuc:Data.Bifunctor.Tannen
+                         bifunctors-5.4.1@bifunctors-5.4.1-LZeQTL0Uaws6v2aJY5STuc:Data.Bifunctor.Wrapped
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         kan-extensions-5.0.1@kan-extensions-5.0.1-GfRgigRS3IhJiXd1UYYFjj:Data.Functor.Day
+                         kan-extensions-5.0.1@kan-extensions-5.0.1-GfRgigRS3IhJiXd1UYYFjj:Data.Functor.Yoneda
+                         lens-4.15.1@lens-4.15.1-2bPnjHpJoHy2zLogJCwNGD:Control.Lens.At
+                         lens-4.15.1@lens-4.15.1-2bPnjHpJoHy2zLogJCwNGD:Control.Lens.Internal.Indexed
+                         lens-4.15.1@lens-4.15.1-2bPnjHpJoHy2zLogJCwNGD:Control.Lens.Reified
+                         lens-4.15.1@lens-4.15.1-2bPnjHpJoHy2zLogJCwNGD:Control.Lens.Tuple
+                         lens-4.15.1@lens-4.15.1-2bPnjHpJoHy2zLogJCwNGD:Control.Lens.Wrapped
+                         lens-4.15.1@lens-4.15.1-2bPnjHpJoHy2zLogJCwNGD:Control.Lens.Zoom
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH:Control.Monad.Primitive
+                         profunctors-5.2@profunctors-5.2-E83rhkBRsJE8oBXYAZAqjZ:Data.Profunctor.Rep
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-1XEErQCPPPc2SEtcHHNx9o:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-1XEErQCPPPc2SEtcHHNx9o:Data.HashSet
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Primitive
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Storable
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Function 7aca86bfbd92366def5f260e30cb2628
+import  -/  base-4.9.1.0:Data.Functor 5ab1dc703df5b482e77efb697833ca3c
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.IO e4a64a8e3dce8616da54f0ee7104f7db
+import  -/  comonad-5@comonad-5-BYydH82fZIS1vK4HJ9v9HH:Control.Comonad 78c4a5a8d1fa2773796a85c577c3c580
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  gloss-1.10.2.5@gloss-1.10.2.5-Cjq2LIsB60XBDXiLGr6ISz:Graphics.Gloss 446fba84c72c2162e0e53dbea5b10a12
+import  -/  gloss-1.10.2.5@gloss-1.10.2.5-Cjq2LIsB60XBDXiLGr6ISz:Graphics.Gloss.Data.Color 35f09dcf5824a501e40cfcf03326b2bc
+import  -/  gloss-1.10.2.5@gloss-1.10.2.5-Cjq2LIsB60XBDXiLGr6ISz:Graphics.Gloss.Data.Display 5392242cf7ec93ea58fa9cb1cc259a3f
+import  -/  gloss-1.10.2.5@gloss-1.10.2.5-Cjq2LIsB60XBDXiLGr6ISz:Graphics.Gloss.Data.Picture 32f91608a8bdee9c0064dc93458da74d
+import  -/  gloss-1.10.2.5@gloss-1.10.2.5-Cjq2LIsB60XBDXiLGr6ISz:Graphics.Gloss.Interface.Pure.Simulate 7d85c20229e42520b9adab85f50d5f7a
+import  -/  gloss-rendering-1.10.3.5@gloss-rendering-1.10.3.5-4njwxhM0L51DDTj3f5QCty:Graphics.Gloss.Internals.Data.Picture ec8d0a362f39091fe9e13deed4330688
+import  -/  lens-4.15.1@lens-4.15.1-2bPnjHpJoHy2zLogJCwNGD:Control.Lens 119ffa0654492e3f1025b64be63262f4
+0617a376aa7ae92da7f628e208b0acf1
+  $fComonadGrid :: Control.Comonad.Comonad Lib.Grid
+  DFunId
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: DFun:.
+                  @ Lib.Grid
+                  Lib.$fFunctorGrid
+                  Lib.$fComonadGrid_$cextract
+                  Lib.gridConfigurations
+                  Lib.$fComonadGrid1 -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fComonadGrid1 :: (Lib.Grid a -> b) -> Lib.Grid a -> Lib.Grid b
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,1*U><S(SS(SLS)S),1*U(U,U(U,U,U),U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (eta :: Lib.Grid a -> b) (x2 :: Lib.Grid a) ->
+                 Lib.$fComonadGrid_$cfmap
+                   @ (Lib.Grid a)
+                   @ b
+                   eta
+                   (Lib.gridConfigurations @ a x2)) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fComonadGrid_$cextract :: Lib.Grid a -> a
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LS(LSL)L),1*U(A,U(A,U,A),A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds2 :: Lib.Grid a) ->
+                 case ds2 of wild { Lib.Grid ds3 ds4 ds5 ->
+                 case ds4 of wild1 { Lib.Line ds6 x2 ds7 -> x2 } }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fComonadGrid_$cfmap :: (a -> b) -> Lib.Grid a -> Lib.Grid b
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,1*U><S(SS(SSS)S),1*U(U,U(U,U,U),U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (w :: a -> b) (w1 :: Lib.Grid a) ->
+                 case w1 of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 case Lib.$w$cfmap
+                        @ a
+                        @ b
+                        w
+                        ww1
+                        ww5
+                        ww6
+                        ww7
+                        ww3 of ww8 { (#,,#) ww9 ww10 ww11 ->
+                 Lib.Grid @ b ww9 ww10 ww11 } } }) -}
+8b72bc9bde8b485aabc6b7718fc8c02c
+  $fDrawableCell :: Lib.Drawable Lib.Cell
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, False, True)
+                Lib.$fDrawableCell_$cdraw
+                  `cast`
+                (Sym (Lib.N:Drawable[0] <Lib.Cell>_N)) -}
+3de49ed3637e94ed93b75f88a8bc810e
+  $fDrawableCell1 :: Graphics.Gloss.Internals.Data.Picture.Picture
+  {- HasNoCafRefs, Strictness: m14,
+     Unfolding: (Graphics.Gloss.Internals.Data.Picture.Pictures
+                   (GHC.Types.[] @ Graphics.Gloss.Internals.Data.Picture.Picture)) -}
+6bf7f334d82e896f12cfcbaafef3fdc5
+  $fDrawableCell2 :: Graphics.Gloss.Internals.Data.Picture.Picture
+  {- HasNoCafRefs, Strictness: m10,
+     Unfolding: (Graphics.Gloss.Internals.Data.Picture.Color
+                   Graphics.Gloss.Data.Color.blue
+                   Lib.$fDrawableCell3) -}
+1cb4474f00135dad761663e2c4e554ec
+  $fDrawableCell3 :: Graphics.Gloss.Internals.Data.Picture.Picture
+  {- HasNoCafRefs, Strictness: m5,
+     Unfolding: (Graphics.Gloss.Internals.Data.Picture.ThickCircle
+                   Lib.$fDrawableCell4
+                   Lib.$fDrawableCell_r) -}
+09cf8020d5542efc07ce04e01e0c2feb
+  $fDrawableCell4 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 2.5#) -}
+2774eebdfecbac330a2c0ac6527ee78f
+  $fDrawableCell_$cdraw ::
+    Lib.Cell -> Graphics.Gloss.Internals.Data.Picture.Picture
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds2 :: Lib.Cell) ->
+                 case ds2 of wild {
+                   Lib.Alive -> Lib.$fDrawableCell2
+                   Lib.Dead -> Lib.$fDrawableCell1 }) -}
+73b5e4920b23ca47b4e6dd68f96bd61b
+  $fDrawableCell_r :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 5.0#) -}
+8b72bc9bde8b485aabc6b7718fc8c02c
+  $fDrawableGrid :: Lib.Drawable a => Lib.Drawable (Lib.Grid a)
+  DFunId
+  {- Arity: 2, Strictness: <L,C(U)><S(SSS),1*U(U,U(U,U,U),U)>m14,
+     Unfolding: InlineRule (0, False, True)
+                Lib.$fDrawableGrid1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Lib.Drawable a>_R ->_R Sym (Lib.N:Drawable[0] <Lib.Grid a>_N)) -}
+8b72bc9bde8b485aabc6b7718fc8c02c
+  $fDrawableGrid1 ::
+    Lib.Drawable a =>
+    Lib.Grid a -> Graphics.Gloss.Internals.Data.Picture.Picture
+  {- Arity: 2, Strictness: <L,C(U)><S(SSS),1*U(U,U(U,U,U),U)>m14,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: Lib.Drawable a) (w1 :: Lib.Grid a) ->
+                 case w1 of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 case Lib.$wds @ a w ww1 ww5 ww6 ww7 ww3 of ww8 { Unit# ww9 ->
+                 Graphics.Gloss.Internals.Data.Picture.Pictures ww9 } } }) -}
+a52da51fabd6c419b38710f4b7e9ff5c
+  $fDrawableGrid10 ::
+    GHC.Types.Float
+    -> Graphics.Gloss.Internals.Data.Picture.Picture
+    -> Graphics.Gloss.Internals.Data.Picture.Picture
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (Graphics.Gloss.Internals.Data.Picture.Translate
+                   Lib.$fDrawableGrid8) -}
+16e61ff9855bd720a1d9a7fd599849cd
+  $fDrawableGrid2 :: [GHC.Types.Float]
+  {- Unfolding: (case GHC.Real.$wnumericEnumFromThen
+                        @ GHC.Types.Float
+                        GHC.Float.$fFractionalFloat
+                        Lib.$fDrawableGrid4
+                        Lib.$fDrawableGrid3 of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ GHC.Types.Float ww1 ww2 }) -}
+da45cf230644b008ce5108902cdf348c
+  $fDrawableGrid3 :: GHC.Types.Float
+  {- HasNoCafRefs, Unfolding: (GHC.Types.F# -20.0#) -}
+99c367e796d7683c7cc45b3f040a1bfe
+  $fDrawableGrid4 :: GHC.Types.Float
+  {- HasNoCafRefs, Unfolding: (GHC.Types.F# -10.0#) -}
+4cd398da35648d676ddfb5842fa32764
+  $fDrawableGrid5 :: [GHC.Types.Float]
+  {- Unfolding: (case GHC.Real.$wnumericEnumFromThen
+                        @ GHC.Types.Float
+                        GHC.Float.$fFractionalFloat
+                        Lib.$fDrawableGrid7
+                        Lib.$fDrawableGrid6 of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ GHC.Types.Float ww1 ww2 }) -}
+33a635b4dab42e57208f7d18b2981a26
+  $fDrawableGrid6 :: GHC.Types.Float
+  {- HasNoCafRefs, Unfolding: (GHC.Types.F# 20.0#) -}
+28314e84aa6bece8171fa7ecc1164f7c
+  $fDrawableGrid7 :: GHC.Types.Float
+  {- HasNoCafRefs, Unfolding: (GHC.Types.F# 10.0#) -}
+b8c62846eef8df9fc529461beddcc3a5
+  $fDrawableGrid8 :: GHC.Types.Float
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.F# 0.0#) -}
+8b72bc9bde8b485aabc6b7718fc8c02c
+  $fDrawableGrid9 ::
+    Lib.Drawable a =>
+    Lib.Line a -> Graphics.Gloss.Internals.Data.Picture.Picture
+  {- Arity: 2, Strictness: <L,C(U)><S(SSS),1*U(U,U,U)>m14,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: Lib.Drawable a) (w1 :: Lib.Line a) ->
+                 case w1 of ww { Lib.Line ww1 ww2 ww3 ->
+                 case Lib.$wds1 @ a w ww1 ww2 ww3 of ww4 { Unit# ww5 ->
+                 Graphics.Gloss.Internals.Data.Picture.Pictures ww5 } }) -}
+243af2e8044df158656f143357577dad
+  $fDrawableGrid_update ::
+    GHC.Types.Float
+    -> Graphics.Gloss.Internals.Data.Picture.Picture
+    -> Graphics.Gloss.Internals.Data.Picture.Picture
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds2 :: GHC.Types.Float)
+                   (ds3 :: Graphics.Gloss.Internals.Data.Picture.Picture) ->
+                 case ds2 of ds4 { GHC.Types.F# ipv ->
+                 case ds3 of wild {
+                   DEFAULT
+                   -> Graphics.Gloss.Internals.Data.Picture.Translate
+                        ds4
+                        Lib.$fDrawableGrid8
+                        wild
+                   Graphics.Gloss.Internals.Data.Picture.Pictures ds5
+                   -> case ds5 of wild1 {
+                        [] -> Lib.$fDrawableCell1
+                        : ipv1 ipv2
+                        -> Graphics.Gloss.Internals.Data.Picture.Translate
+                             ds4
+                             Lib.$fDrawableGrid8
+                             wild } } }) -}
+8b72bc9bde8b485aabc6b7718fc8c02c
+  $fDrawableLine :: Lib.Drawable a => Lib.Drawable (Lib.Line a)
+  DFunId
+  {- Arity: 2, Strictness: <L,C(U)><S(SSS),1*U(U,U,U)>m14,
+     Unfolding: InlineRule (0, False, True)
+                Lib.$fDrawableGrid9
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Lib.Drawable a>_R ->_R Sym (Lib.N:Drawable[0] <Lib.Line a>_N)) -}
+463a0832461734b6986e0096eed3bf84
+  $fEqCell :: GHC.Classes.Eq Lib.Cell
+  DFunId
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: DFun:. @ Lib.Cell Lib.$fEqCell_$c== Lib.$fEqCell1 -}
+463a0832461734b6986e0096eed3bf84
+  $fEqCell1 :: Lib.Cell -> Lib.Cell -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Lib.Cell) (b :: Lib.Cell) ->
+                 case a of a1 { DEFAULT ->
+                 case b of b1 { DEFAULT ->
+                 case a1 of wild {
+                   Lib.Alive
+                   -> case b1 of wild1 {
+                        Lib.Alive -> GHC.Types.False Lib.Dead -> GHC.Types.True }
+                   Lib.Dead
+                   -> case b1 of wild1 {
+                        Lib.Alive -> GHC.Types.True Lib.Dead -> GHC.Types.False } } } }) -}
+463a0832461734b6986e0096eed3bf84
+  $fEqCell_$c== :: Lib.Cell -> Lib.Cell -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds2 :: Lib.Cell) (ds3 :: Lib.Cell) ->
+                 case ds2 of wild {
+                   Lib.Alive
+                   -> case ds3 of wild1 {
+                        Lib.Alive -> GHC.Types.True Lib.Dead -> GHC.Types.False }
+                   Lib.Dead
+                   -> case ds3 of wild1 {
+                        Lib.Alive -> GHC.Types.False Lib.Dead -> GHC.Types.True } }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid :: Data.Foldable.Foldable Lib.Grid
+  DFunId
+  {- Unfolding: DFun:.
+                  @ Lib.Grid
+                  Lib.$fFoldableGrid24
+                  Lib.$fFoldableGrid23
+                  Lib.$fFoldableGrid_$cfoldr1
+                  Lib.$fFoldableGrid22
+                  Lib.$fFoldableGrid21
+                  Lib.$fFoldableGrid20
+                  Lib.$fFoldableGrid18
+                  Lib.$fFoldableGrid16
+                  Lib.$fFoldableGrid15
+                  Lib.$fFoldableGrid13
+                  Lib.$fFoldableGrid10
+                  Lib.$fFoldableGrid9
+                  Lib.$fFoldableGrid7
+                  Lib.$fFoldableGrid5
+                  Lib.$fFoldableGrid3
+                  Lib.$fFoldableGrid1 -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid1 :: GHC.Num.Num a => Lib.Grid a -> a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLLLLLC(S)),U(A,A,1*U,A,A,A,1*C1(U))><S(SS(SSS)S),1*U(U,U(U,U,U),U)>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.$fFoldableGrid2
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Num.Num a>_R
+                 ->_R <Lib.Grid a>_R
+                 ->_R Data.Monoid.N:Product[0] <a>_R) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid10 :: Lib.Grid a -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SS(SSS)S),1*U(U,U(U,U,U),U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: Lib.Grid a) ->
+                 case w of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 Lib.$w$cfoldr
+                   @ a
+                   @ (GHC.Types.Int -> GHC.Types.Int)
+                   (Lib.$fFoldableGrid12 @ a)
+                   (GHC.Base.id @ GHC.Types.Int)
+                   ww1
+                   ww5
+                   ww6
+                   ww7
+                   ww3
+                   Lib.$fFoldableGrid11 } }) -}
+93b7b699ead82b453e0a3197927b5a64
+  $fFoldableGrid11 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+fce8dd08996f289ccdd4998d83cf4619
+  $fFoldableGrid12 ::
+    a
+    -> (GHC.Types.Int -> GHC.Types.Int)
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Unfolding: (\ @ a
+                   (x2 :: a)
+                   (k :: GHC.Types.Int -> GHC.Types.Int)
+                   (z :: GHC.Types.Int) ->
+                 case z of wild { GHC.Types.I# x3 ->
+                 k (GHC.Types.I# (GHC.Prim.+# x3 1#)) }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid13 :: Lib.Grid a -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ a (w :: Lib.Grid a) ->
+                 case w of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 Lib.$w$cfoldr
+                   @ a
+                   @ GHC.Types.Bool
+                   (Lib.$fFoldableGrid14 @ a)
+                   GHC.Types.True
+                   ww1
+                   ww5
+                   ww6
+                   ww7
+                   ww3 } }) -}
+035fe9a7f9ad7ae45fb4aeaa45266e00
+  $fFoldableGrid14 :: a -> GHC.Types.Bool -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a (ds2 :: a) (ds3 :: GHC.Types.Bool) -> GHC.Types.False) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid15 :: Lib.Grid a -> [a]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True) Lib.$fFoldableGrid_toList -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid16 :: (a -> a -> a) -> Lib.Grid a -> a
+  {- Arity: 2,
+     Strictness: <L,C(C1(U))><S(SS(SSS)S),1*U(U,U(U,U,U),U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: a -> a -> a) (w1 :: Lib.Grid a) ->
+                 case w1 of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 Lib.$wds6 @ a w ww1 ww5 ww6 ww7 ww3 } }) -}
+d6c6f3b89f82e69afaa7c4ee5de56f3a
+  $fFoldableGrid17 :: a
+  {- Strictness: x -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid18 :: (a -> a -> a) -> Lib.Grid a -> a
+  {- Arity: 2,
+     Strictness: <L,C(C1(U))><S(SS(SSS)S),1*U(U,U(U,U,U),U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: a -> a -> a) (w1 :: Lib.Grid a) ->
+                 case w1 of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 Lib.$wds7 @ a w ww1 ww5 ww6 ww7 ww3 } }) -}
+604868048ad546227bdb36b6d70978d9
+  $fFoldableGrid19 :: a
+  {- Strictness: x -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid2 ::
+    GHC.Num.Num a => Lib.Grid a -> Data.Monoid.Product a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLLLLLC(S)),U(A,A,1*U,A,A,A,1*C1(U))><S(SS(SSS)S),1*U(U,U(U,U,U),U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Num.Num a) (w1 :: Lib.Grid a) ->
+                 case w1 of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 Lib.$wds2 @ a w ww1 ww5 ww6 ww7 ww3 } }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid20 :: (b -> a -> b) -> b -> Lib.Grid a -> b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,U><S(SS(SSS)S),1*U(U,U(U,U,U),U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ b @ a (w :: b -> a -> b) (w1 :: b) (w2 :: Lib.Grid a) ->
+                 case w2 of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 Lib.$wds8 @ b @ a w w1 ww1 ww5 ww6 ww7 ww3 } }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid21 :: (b -> a -> b) -> b -> Lib.Grid a -> b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,U><S(SS(SSS)S),1*U(U,U(U,U,U),U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ b @ a (w :: b -> a -> b) (w1 :: b) (w2 :: Lib.Grid a) ->
+                 case w2 of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 Lib.$wds9 @ b @ a w w1 ww1 ww5 ww6 ww7 ww3 } }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid22 :: (a -> b -> b) -> b -> Lib.Grid a -> b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,U><S(SS(SSS)S),1*U(U,U(U,U,U),U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a @ b (w :: a -> b -> b) (w1 :: b) (w2 :: Lib.Grid a) ->
+                 case w2 of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 Lib.$wds10 @ a @ b w w1 ww1 ww5 ww6 ww7 ww3 } }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid23 ::
+    GHC.Base.Monoid m => (a -> m) -> Lib.Grid a -> m
+  {- Arity: 2, Strictness: <L,U(1*U,1*U,A)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True) Lib.$fFoldableGrid_foldMap -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid24 :: GHC.Base.Monoid m => Lib.Grid m -> m
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),U(1*U,1*U,A)><S(SS(SSS)S),1*U(U,U(U,U,U),U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ m (w :: GHC.Base.Monoid m) (w1 :: Lib.Grid m) ->
+                 case w1 of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 Lib.$wds11 @ m w ww1 ww5 ww6 ww7 ww3 } }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid3 :: GHC.Num.Num a => Lib.Grid a -> a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLLLLLC(S)),U(1*U,A,A,A,A,A,1*C1(U))><S(SS(SSS)S),1*U(U,U(U,U,U),U)>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.$fFoldableGrid4
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Num.Num a>_R
+                 ->_R <Lib.Grid a>_R
+                 ->_R Data.Monoid.N:Sum[0] <a>_R) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid4 :: GHC.Num.Num a => Lib.Grid a -> Data.Monoid.Sum a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLLLLLC(S)),U(1*U,A,A,A,A,A,1*C1(U))><S(SS(SSS)S),1*U(U,U(U,U,U),U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Num.Num a) (w1 :: Lib.Grid a) ->
+                 case w1 of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 Lib.$wds3 @ a w ww1 ww5 ww6 ww7 ww3 } }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid5 :: GHC.Classes.Ord a => Lib.Grid a -> a
+  {- Arity: 2,
+     Strictness: <L,U(A,A,A,C(C1(U)),A,A,A,A)><S(SS(SSS)S),1*U(U,U(U,U,U),U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Classes.Ord a) (w1 :: Lib.Grid a) ->
+                 case w1 of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 Lib.$wds4 @ a w ww1 ww5 ww6 ww7 ww3 } }) -}
+808830690103772e7587f2b9be4a3c32
+  $fFoldableGrid6 :: a
+  {- Strictness: x -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid7 :: GHC.Classes.Ord a => Lib.Grid a -> a
+  {- Arity: 2,
+     Strictness: <L,U(A,A,A,A,A,C(C1(U)),A,A)><S(SS(SSS)S),1*U(U,U(U,U,U),U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Classes.Ord a) (w1 :: Lib.Grid a) ->
+                 case w1 of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 Lib.$wds5 @ a w ww1 ww5 ww6 ww7 ww3 } }) -}
+1da4ce08b8ab5729a861aab542fd16f8
+  $fFoldableGrid8 :: a
+  {- Strictness: x -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid9 ::
+    GHC.Classes.Eq a => a -> Lib.Grid a -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*C1(U),A)><L,U>,
+     Unfolding: (\ @ a ($dEq :: GHC.Classes.Eq a) (eta :: a) ->
+                 let {
+                   f :: a -> GHC.Types.Bool = GHC.Classes.== @ a $dEq eta
+                 } in
+                 let {
+                   lvl6 :: a -> Data.Monoid.Any -> Data.Monoid.Any {- Arity: 1 -}
+                   = \ (x2 :: a) ->
+                     let {
+                       ds2 :: GHC.Types.Bool = f x2
+                     } in
+                     (\ (ds3 :: GHC.Types.Bool) ->
+                      case ds2 of wild {
+                        GHC.Types.False -> ds3 GHC.Types.True -> GHC.Types.True })
+                       `cast`
+                     (Sym (Data.Monoid.N:Any[0]) ->_R Sym (Data.Monoid.N:Any[0]))
+                 } in
+                 (\ (eta1 :: Lib.Grid a) ->
+                  case eta1 of ww { Lib.Grid ww1 ww2 ww3 ->
+                  case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                  Lib.$w$cfoldr
+                    @ a
+                    @ Data.Monoid.Any
+                    lvl6
+                    GHC.Types.False `cast` (Sym (Data.Monoid.N:Any[0]))
+                    ww1
+                    ww5
+                    ww6
+                    ww7
+                    ww3 } })
+                   `cast`
+                 (<Lib.Grid a>_R ->_R Data.Monoid.N:Any[0])) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableGrid_$cfoldr :: (a -> b -> b) -> b -> Lib.Line a -> b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,1*U><S,1*U><S(SSS),1*U(U,U,U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a @ b (w :: a -> b -> b) (w1 :: b) (w2 :: Lib.Line a) ->
+                 case w2 of ww { Lib.Line ww1 ww2 ww3 ->
+                 Lib.$w$cfoldr1 @ a @ b w w1 ww1 ww2 ww3 }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid_$cfoldr1 :: (a -> b -> b) -> b -> Lib.Grid a -> b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,1*U><S,1*U><S(SS(SSS)S),1*U(U,U(U,U,U),U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a @ b (w :: a -> b -> b) (w1 :: b) (w2 :: Lib.Grid a) ->
+                 case w2 of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 Lib.$w$cfoldr @ a @ b w w1 ww1 ww5 ww6 ww7 ww3 } }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid_foldMap ::
+    GHC.Base.Monoid m => (a -> m) -> Lib.Grid a -> m
+  {- Arity: 2, Strictness: <L,U(1*U,1*U,A)><L,C(U)>,
+     Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ m
+                   @ a
+                   ($dMonoid :: GHC.Base.Monoid m)
+                   (f :: a -> m)
+                   (eta :: Lib.Grid a) ->
+                 let {
+                   f1 :: m -> m -> m = GHC.Base.mappend @ m $dMonoid
+                 } in
+                 Lib.$fFoldableGrid_$cfoldr1
+                   @ a
+                   @ m
+                   (\ (x2 :: a) -> f1 (f x2))
+                   (GHC.Base.mempty @ m $dMonoid)
+                   eta) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFoldableGrid_toList :: Lib.Grid a -> [a]
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ a (t1 :: Lib.Grid a) ->
+                 GHC.Base.build
+                   @ a
+                   (\ @ b (c :: a -> b -> b)[OneShot] (n :: b)[OneShot] ->
+                    Lib.$fFoldableGrid_$cfoldr1 @ a @ b c n t1)) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine :: Data.Foldable.Foldable Lib.Line
+  DFunId
+  {- Unfolding: DFun:.
+                  @ Lib.Line
+                  Lib.$fFoldableLine17
+                  Lib.$fFoldableLine16
+                  Lib.$fFoldableGrid_$cfoldr
+                  Lib.$fFoldableLine15
+                  Lib.$fFoldableLine14
+                  Lib.$fFoldableLine13
+                  Lib.$fFoldableLine12
+                  Lib.$fFoldableLine11
+                  Lib.$fFoldableLine10
+                  Lib.$fFoldableLine9
+                  Lib.$fFoldableLine8
+                  Lib.$fFoldableLine7
+                  Lib.$fFoldableLine6
+                  Lib.$fFoldableLine5
+                  Lib.$fFoldableLine3
+                  Lib.$fFoldableLine1 -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine1 :: GHC.Num.Num a => Lib.Line a -> a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLLLLLC(S)),U(A,A,1*U,A,A,A,1*C1(U))><S(SSS),1*U(U,U,U)>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.$fFoldableLine2
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Num.Num a>_R
+                 ->_R <Lib.Line a>_R
+                 ->_R Data.Monoid.N:Product[0] <a>_R) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine10 :: Lib.Line a -> [a]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True) Lib.$fFoldableLine_toList -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine11 :: (a -> a -> a) -> Lib.Line a -> a
+  {- Arity: 2, Strictness: <L,C(C1(U))><S(SSS),1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: a -> a -> a) (w1 :: Lib.Line a) ->
+                 case w1 of ww { Lib.Line ww1 ww2 ww3 ->
+                 Lib.$wds16 @ a w ww1 ww2 ww3 }) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine12 :: (a -> a -> a) -> Lib.Line a -> a
+  {- Arity: 2, Strictness: <L,C(C1(U))><S(SSS),1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: a -> a -> a) (w1 :: Lib.Line a) ->
+                 case w1 of ww { Lib.Line ww1 ww2 ww3 ->
+                 Lib.$wds17 @ a w ww1 ww2 ww3 }) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine13 :: (b -> a -> b) -> b -> Lib.Line a -> b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,U><S(SSS),1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ b @ a (w :: b -> a -> b) (w1 :: b) (w2 :: Lib.Line a) ->
+                 case w2 of ww { Lib.Line ww1 ww2 ww3 ->
+                 Lib.$wds18 @ b @ a w w1 ww1 ww2 ww3 }) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine14 :: (b -> a -> b) -> b -> Lib.Line a -> b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,U><S(SSS),1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ b @ a (w :: b -> a -> b) (w1 :: b) (w2 :: Lib.Line a) ->
+                 case w2 of ww { Lib.Line ww1 ww2 ww3 ->
+                 Lib.$wds19 @ b @ a w w1 ww1 ww2 ww3 }) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine15 :: (a -> b -> b) -> b -> Lib.Line a -> b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,U><S(SSS),1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a @ b (w :: a -> b -> b) (w1 :: b) (w2 :: Lib.Line a) ->
+                 case w2 of ww { Lib.Line ww1 ww2 ww3 ->
+                 Lib.$wds20 @ a @ b w w1 ww1 ww2 ww3 }) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine16 ::
+    GHC.Base.Monoid m => (a -> m) -> Lib.Line a -> m
+  {- Arity: 2, Strictness: <L,U(1*U,1*U,A)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True) Lib.$fFoldableLine_foldMap -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine17 :: GHC.Base.Monoid m => Lib.Line m -> m
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),U(1*U,1*U,A)><S(SSS),1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ m (w :: GHC.Base.Monoid m) (w1 :: Lib.Line m) ->
+                 case w1 of ww { Lib.Line ww1 ww2 ww3 ->
+                 Lib.$wds21 @ m w ww1 ww2 ww3 }) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine2 ::
+    GHC.Num.Num a => Lib.Line a -> Data.Monoid.Product a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLLLLLC(S)),U(A,A,1*U,A,A,A,1*C1(U))><S(SSS),1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Num.Num a) (w1 :: Lib.Line a) ->
+                 case w1 of ww { Lib.Line ww1 ww2 ww3 ->
+                 Lib.$wds12 @ a w ww1 ww2 ww3 }) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine3 :: GHC.Num.Num a => Lib.Line a -> a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLLLLLC(S)),U(1*U,A,A,A,A,A,1*C1(U))><S(SSS),1*U(U,U,U)>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.$fFoldableLine4
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Num.Num a>_R
+                 ->_R <Lib.Line a>_R
+                 ->_R Data.Monoid.N:Sum[0] <a>_R) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine4 :: GHC.Num.Num a => Lib.Line a -> Data.Monoid.Sum a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLLLLLC(S)),U(1*U,A,A,A,A,A,1*C1(U))><S(SSS),1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Num.Num a) (w1 :: Lib.Line a) ->
+                 case w1 of ww { Lib.Line ww1 ww2 ww3 ->
+                 Lib.$wds13 @ a w ww1 ww2 ww3 }) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine5 :: GHC.Classes.Ord a => Lib.Line a -> a
+  {- Arity: 2,
+     Strictness: <L,U(A,A,A,C(C1(U)),A,A,A,A)><S(SSS),1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Classes.Ord a) (w1 :: Lib.Line a) ->
+                 case w1 of ww { Lib.Line ww1 ww2 ww3 ->
+                 Lib.$wds14 @ a w ww1 ww2 ww3 }) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine6 :: GHC.Classes.Ord a => Lib.Line a -> a
+  {- Arity: 2,
+     Strictness: <L,U(A,A,A,A,A,C(C1(U)),A,A)><S(SSS),1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Classes.Ord a) (w1 :: Lib.Line a) ->
+                 case w1 of ww { Lib.Line ww1 ww2 ww3 ->
+                 Lib.$wds15 @ a w ww1 ww2 ww3 }) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine7 ::
+    GHC.Classes.Eq a => a -> Lib.Line a -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*C1(U),A)><L,U>,
+     Unfolding: (\ @ a ($dEq :: GHC.Classes.Eq a) (eta :: a) ->
+                 let {
+                   f :: a -> GHC.Types.Bool = GHC.Classes.== @ a $dEq eta
+                 } in
+                 let {
+                   lvl6 :: a -> Data.Monoid.Any -> Data.Monoid.Any {- Arity: 1 -}
+                   = \ (x2 :: a) ->
+                     let {
+                       ds2 :: GHC.Types.Bool = f x2
+                     } in
+                     (\ (ds3 :: GHC.Types.Bool) ->
+                      case ds2 of wild {
+                        GHC.Types.False -> ds3 GHC.Types.True -> GHC.Types.True })
+                       `cast`
+                     (Sym (Data.Monoid.N:Any[0]) ->_R Sym (Data.Monoid.N:Any[0]))
+                 } in
+                 (\ (eta1 :: Lib.Line a) ->
+                  case eta1 of ww { Lib.Line ww1 ww2 ww3 ->
+                  Lib.$w$cfoldr1
+                    @ a
+                    @ Data.Monoid.Any
+                    lvl6
+                    GHC.Types.False `cast` (Sym (Data.Monoid.N:Any[0]))
+                    ww1
+                    ww2
+                    ww3 })
+                   `cast`
+                 (<Lib.Line a>_R ->_R Data.Monoid.N:Any[0])) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine8 :: Lib.Line a -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SSS),1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: Lib.Line a) ->
+                 case w of ww { Lib.Line ww1 ww2 ww3 ->
+                 Lib.$w$cfoldr1
+                   @ a
+                   @ (GHC.Types.Int -> GHC.Types.Int)
+                   (Lib.$fFoldableGrid12 @ a)
+                   (GHC.Base.id @ GHC.Types.Int)
+                   ww1
+                   ww2
+                   ww3
+                   Lib.$fFoldableGrid11 }) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine9 :: Lib.Line a -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ a (w :: Lib.Line a) ->
+                 case w of ww { Lib.Line ww1 ww2 ww3 ->
+                 Lib.$w$cfoldr1
+                   @ a
+                   @ GHC.Types.Bool
+                   (Lib.$fFoldableGrid14 @ a)
+                   GHC.Types.True
+                   ww1
+                   ww2
+                   ww3 }) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine_foldMap ::
+    GHC.Base.Monoid m => (a -> m) -> Lib.Line a -> m
+  {- Arity: 2, Strictness: <L,U(1*U,1*U,A)><L,C(U)>,
+     Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ m
+                   @ a
+                   ($dMonoid :: GHC.Base.Monoid m)
+                   (f :: a -> m)
+                   (eta :: Lib.Line a) ->
+                 let {
+                   f1 :: m -> m -> m = GHC.Base.mappend @ m $dMonoid
+                 } in
+                 Lib.$fFoldableGrid_$cfoldr
+                   @ a
+                   @ m
+                   (\ (x2 :: a) -> f1 (f x2))
+                   (GHC.Base.mempty @ m $dMonoid)
+                   eta) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFoldableLine_toList :: Lib.Line a -> [a]
+  {- Arity: 1, Strictness: <L,U>, Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ a (t1 :: Lib.Line a) ->
+                 GHC.Base.build
+                   @ a
+                   (\ @ b (c :: a -> b -> b)[OneShot] (n :: b)[OneShot] ->
+                    Lib.$fFoldableGrid_$cfoldr @ a @ b c n t1)) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFunctorGrid :: GHC.Base.Functor Lib.Grid
+  DFunId
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: DFun:.
+                  @ Lib.Grid Lib.$fComonadGrid_$cfmap Lib.$fFunctorGrid1 -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fFunctorGrid1 :: a -> Lib.Grid b -> Lib.Grid a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U><S(SS(SSS)S),1*U(U,U(U,U,U),U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (eta :: a) (eta1 :: Lib.Grid b) ->
+                 Lib.$fComonadGrid_$cfmap @ b @ a (\ (ds2 :: b) -> eta) eta1) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFunctorLine :: GHC.Base.Functor Lib.Line
+  DFunId
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: DFun:.
+                  @ Lib.Line Lib.$fFunctorLine_$cfmap Lib.$fFunctorLine1 -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFunctorLine1 :: a -> Lib.Line b -> Lib.Line a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S(SSS),1*U(U,U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (eta :: a) (eta1 :: Lib.Line b) ->
+                 Lib.$fFunctorLine_$cfmap @ b @ a (\ (ds2 :: b) -> eta) eta1) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fFunctorLine_$cfmap :: (a -> b) -> Lib.Line a -> Lib.Line b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S(SSS),1*U(U,U,U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (w :: a -> b) (w1 :: Lib.Line a) ->
+                 case w1 of ww { Lib.Line ww1 ww2 ww3 ->
+                 case GHC.Base.map @ a @ b w ww1 of dt { DEFAULT ->
+                 case w ww2 of dt1 { DEFAULT ->
+                 case GHC.Base.map @ a @ b w ww3 of dt2 { DEFAULT ->
+                 Lib.Line @ b dt dt1 dt2 } } } }) -}
+463a0832461734b6986e0096eed3bf84
+  $fShowCell :: GHC.Show.Show Lib.Cell
+  DFunId
+  {- Strictness: m,
+     Unfolding: DFun:.
+                  @ Lib.Cell Lib.$fShowCell5 Lib.$fShowCell_$cshow Lib.$fShowCell1 -}
+463a0832461734b6986e0096eed3bf84
+  $fShowCell1 :: [Lib.Cell] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [Lib.Cell]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Lib.Cell Lib.$fShowCell2 ls s) -}
+463a0832461734b6986e0096eed3bf84
+  $fShowCell2 :: Lib.Cell -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (x2 :: Lib.Cell) (s :: GHC.Base.String)[OneShot] ->
+                 case x2 of wild {
+                   Lib.Alive -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowCell4 s
+                   Lib.Dead -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowCell3 s }) -}
+f0a3cb0ea38395f8fec2318168759c81
+  $fShowCell3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# " "#) -}
+764a332ef12f2b7cf42f95f6b2989cfd
+  $fShowCell4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "O"#) -}
+463a0832461734b6986e0096eed3bf84
+  $fShowCell5 :: GHC.Types.Int -> Lib.Cell -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds2 :: GHC.Types.Int)
+                   (x2 :: Lib.Cell)
+                   (s :: GHC.Base.String) ->
+                 case x2 of wild {
+                   Lib.Alive
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr @ GHC.Types.Char @ b c n Lib.$fShowCell4)
+                        s
+                   Lib.Dead
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr @ GHC.Types.Char @ b c n Lib.$fShowCell3)
+                        s }) -}
+463a0832461734b6986e0096eed3bf84
+  $fShowCell_$cshow :: Lib.Cell -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds2 :: Lib.Cell) ->
+                 case ds2 of wild {
+                   Lib.Alive -> Lib.$fShowCell4 Lib.Dead -> Lib.$fShowCell3 }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fShowGrid :: GHC.Show.Show a => GHC.Show.Show (Lib.Grid a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(A,U,A)>m,
+     Unfolding: DFun: @ a ($dShow :: GHC.Show.Show a).
+                  @ (Lib.Grid a)
+                  (Lib.$fShowGrid_$cshowsPrec @ a $dShow)
+                  (Lib.$fShowGrid3 @ a $dShow)
+                  (Lib.$fShowGrid_$cshowList @ a $dShow) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fShowGrid1 :: GHC.Show.Show a => [Lib.Grid a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(A,U,A)><S,1*U><L,U>,
+     Unfolding: (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [Lib.Grid a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Lib.Grid a)
+                   (\ (x2 :: Lib.Grid a) (s1 :: GHC.Base.String)[OneShot] ->
+                    case x2 of ww { Lib.Grid ww1 ww2 ww3 ->
+                    case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      (Lib.$wds22 @ a $dShow ww1 ww5 ww6 ww7 ww3)
+                      s1 } })
+                   ls
+                   s) -}
+5319cbe5801ea8cff9a8240b11edec6e
+  $fShowGrid2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "\n"#) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fShowGrid3 :: GHC.Show.Show a => Lib.Grid a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(A,U,A)><S(SSS),1*U(U,U(U,U,U),U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Show.Show a) (w1 :: Lib.Grid a) ->
+                 case w1 of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 Lib.$wds22 @ a w ww1 ww5 ww6 ww7 ww3 } }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fShowGrid4 ::
+    GHC.Show.Show a => GHC.Types.Int -> Lib.Grid a -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,U(A,U,A)><L,A><S(SSS),1*U(U,U(U,U,U),U)><L,1*U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ds2 :: GHC.Types.Int)
+                   (x2 :: Lib.Grid a)
+                   (s :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (Lib.$fShowGrid3 @ a $dShow x2))
+                   s) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fShowGrid_$cshowList ::
+    GHC.Show.Show a => [Lib.Grid a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(A,U,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (0, True, True) Lib.$fShowGrid1 -}
+0617a376aa7ae92da7f628e208b0acf1
+  $fShowGrid_$cshowsPrec ::
+    GHC.Show.Show a => GHC.Types.Int -> Lib.Grid a -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,U(A,U,A)><L,A><S(SSS),1*U(U,U(U,U,U),U)><L,1*U>,
+     Unfolding: InlineRule (0, True, True) Lib.$fShowGrid4 -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fShowLine :: GHC.Show.Show a => GHC.Show.Show (Lib.Line a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(A,U,A)>m,
+     Unfolding: DFun: @ a ($dShow :: GHC.Show.Show a).
+                  @ (Lib.Line a)
+                  (Lib.$fShowLine_$cshowsPrec @ a $dShow)
+                  (Lib.$fShowLine2 @ a $dShow)
+                  (Lib.$fShowLine_$cshowList @ a $dShow) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fShowLine1 :: GHC.Show.Show a => [Lib.Line a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(A,U,A)><S,1*U><L,U>,
+     Unfolding: (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [Lib.Line a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Lib.Line a)
+                   (\ (x2 :: Lib.Line a) (s1 :: GHC.Base.String)[OneShot] ->
+                    case x2 of ww { Lib.Line ww1 ww2 ww3 ->
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      (Lib.$wds23 @ a $dShow ww1 ww2 ww3)
+                      s1 })
+                   ls
+                   s) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fShowLine2 :: GHC.Show.Show a => Lib.Line a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,1*U(A,1*U,A)><S(SSS),1*U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Show.Show a) (w1 :: Lib.Line a) ->
+                 case w1 of ww { Lib.Line ww1 ww2 ww3 ->
+                 Lib.$wds23 @ a w ww1 ww2 ww3 }) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fShowLine3 ::
+    GHC.Show.Show a => GHC.Types.Int -> Lib.Line a -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,1*U(A,1*U,A)><L,A><S(SSS),1*U(U,U,U)><L,1*U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ds2 :: GHC.Types.Int)
+                   (x2 :: Lib.Line a)
+                   (s :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (Lib.$fShowLine2 @ a $dShow x2))
+                   s) -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fShowLine_$cshowList ::
+    GHC.Show.Show a => [Lib.Line a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(A,U,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (0, True, True) Lib.$fShowLine1 -}
+7110f7785a08e5d4e2132fd8569c9589
+  $fShowLine_$cshowsPrec ::
+    GHC.Show.Show a => GHC.Types.Int -> Lib.Line a -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,1*U(A,1*U,A)><L,A><S(SSS),1*U(U,U,U)><L,1*U>,
+     Unfolding: InlineRule (0, True, True) Lib.$fShowLine3 -}
+09b92960f3c346ca2ff6f031b044a4a9
+  $tc'Alive :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14459637506714919157##
+                   11082505573064363940##
+                   Lib.$trModule
+                   Lib.$tc'Alive1) -}
+66464c94a6d37951d8c2ba0c684367bf
+  $tc'Alive1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Alive"#) -}
+864f8115ad1ab34f360dbf770dbe4a27
+  $tc'C:Drawable :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2386380972245009428##
+                   5758040944035283132##
+                   Lib.$trModule
+                   Lib.$tc'C:Drawable1) -}
+cb8eb6c7403518ccbf3857d807ea6f4c
+  $tc'C:Drawable1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'C:Drawable"#) -}
+b1bf6261b00b8049d60389c03faba3c2
+  $tc'Dead :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7513328843865537760##
+                   12801425626025760602##
+                   Lib.$trModule
+                   Lib.$tc'Dead1) -}
+c7ffefda79d66348c54925d275ef412f
+  $tc'Dead1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Dead"#) -}
+eae627f60a5b6053597950cd86848087
+  $tc'Grid :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16445585956267217022##
+                   8542471636497526493##
+                   Lib.$trModule
+                   Lib.$tc'Grid1) -}
+458063f2e23f100a4fe5a77f72f2e02b
+  $tc'Grid1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Grid"#) -}
+2793f92a8f690a048f4a68fb2f43c581
+  $tc'Line :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11919953961670932291##
+                   16243761390054928015##
+                   Lib.$trModule
+                   Lib.$tc'Line1) -}
+d44098bfa221ec90e57cd83187bc4d53
+  $tc'Line1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Line"#) -}
+1d1837bfc8a197712767c912e293ff03
+  $tcCell :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3301936671594119247##
+                   7210652194990791377##
+                   Lib.$trModule
+                   Lib.$tcCell1) -}
+ac7dcffe74a5469a89672fdef6aef717
+  $tcCell1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Cell"#) -}
+6fb5d746109cf0724b7fac6e2b8b7cc9
+  $tcDrawable :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   792136031739644747##
+                   5063071489631867445##
+                   Lib.$trModule
+                   Lib.$tcDrawable1) -}
+f3ef668df102939d3aa5c08888067b32
+  $tcDrawable1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Drawable"#) -}
+71d83bb225e7ac4765c545ebe0153b16
+  $tcGrid :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   323930099235899801##
+                   9692845752296338445##
+                   Lib.$trModule
+                   Lib.$tcGrid1) -}
+b724ff2fa3478d33b34d4d1c1bb48932
+  $tcGrid1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Grid"#) -}
+c34a3a1f1a1da974e4cd8d283f939d2f
+  $tcLine :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13258212023138086354##
+                   17061255036001991010##
+                   Lib.$trModule
+                   Lib.$tcLine1) -}
+3624c315af178cc76a799ad64135f3a1
+  $tcLine1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Line"#) -}
+9f40eb97f6f1630f0fb8edef15697a33
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Lib.$trModule2 Lib.$trModule1) -}
+681269e01034b11c99d1f43ebe7d7bc0
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Lib"#) -}
+401bbeb64746d05846f09eb47b09d0ec
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "DSPB-0.1.0.0-IzuWE0A9uXqKGPPquzCxk7"#) -}
+432eec6fe023d49649c8cc23b4b40ce0
+  $w$cfmap ::
+    (a -> b)
+    -> [Lib.Line a]
+    -> [a]
+    -> a
+    -> [a]
+    -> [Lib.Line a]
+    -> (# [Lib.Line b], Lib.Line b, [Lib.Line b] #)
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <S,1*U><S,U><S,U><S,U><S,U><S,U>, Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   (w :: a -> b)
+                   (ww :: [Lib.Line a])
+                   (ww1 :: [a])
+                   (ww2 :: a)
+                   (ww3 :: [a])
+                   (ww4 :: [Lib.Line a]) ->
+                 case GHC.Base.map
+                        @ (Lib.Line a)
+                        @ (Lib.Line b)
+                        (\ (ds2 :: Lib.Line a) ->
+                         case ds2 of wild { Lib.Line left x2 right ->
+                         case GHC.Base.map @ a @ b w left of dt { DEFAULT ->
+                         case w x2 of dt1 { DEFAULT ->
+                         case GHC.Base.map @ a @ b w right of dt2 { DEFAULT ->
+                         Lib.Line @ b dt dt1 dt2 } } } })
+                        ww of dt { DEFAULT ->
+                 case GHC.Base.map @ a @ b w ww1 of dt1 { DEFAULT ->
+                 case w ww2 of dt2 { DEFAULT ->
+                 case GHC.Base.map @ a @ b w ww3 of dt3 { DEFAULT ->
+                 case GHC.Base.map
+                        @ (Lib.Line a)
+                        @ (Lib.Line b)
+                        (\ (ds2 :: Lib.Line a) ->
+                         case ds2 of wild { Lib.Line left x2 right ->
+                         case GHC.Base.map @ a @ b w left of dt4 { DEFAULT ->
+                         case w x2 of dt5 { DEFAULT ->
+                         case GHC.Base.map @ a @ b w right of dt6 { DEFAULT ->
+                         Lib.Line @ b dt4 dt5 dt6 } } } })
+                        ww4 of dt4 { DEFAULT ->
+                 (# dt, Lib.Line @ b dt1 dt2 dt3, dt4 #) } } } } }) -}
+71011e8e65e64a34d624bd5756454a24
+  $w$cfoldr ::
+    (a -> b -> b)
+    -> b -> [Lib.Line a] -> [a] -> a -> [a] -> [Lib.Line a] -> b
+  {- Arity: 7, HasNoCafRefs,
+     Strictness: <S,1*U><S,1*U><S,U><S,U><S,U><S,U><S,U>, Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   (w :: a -> b -> b)
+                   (w1 :: b)
+                   (ww :: [Lib.Line a])
+                   (ww1 :: [a])
+                   (ww2 :: a)
+                   (ww3 :: [a])
+                   (ww4 :: [Lib.Line a]) ->
+                 letrec {
+                   go :: [Lib.Line a] -> b -> b
+                     {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+                   = \ (ds2 :: [Lib.Line a]) (eta :: b) ->
+                     case ds2 of wild {
+                       [] -> eta
+                       : y ys -> go ys (Lib.$fFoldableGrid_$cfoldr @ a @ b w eta y) }
+                 } in
+                 letrec {
+                   go1 :: [Lib.Line a] -> b {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds2 :: [Lib.Line a]) ->
+                     case ds2 of wild {
+                       [] -> w1
+                       : y ys
+                       -> case y of ww5 { Lib.Line ww6 ww7 ww8 ->
+                          Lib.$w$cfoldr1 @ a @ b w (go1 ys) ww6 ww7 ww8 } }
+                 } in
+                 go ww (Lib.$w$cfoldr1 @ a @ b w (go1 ww4) ww1 ww2 ww3)) -}
+6ebe3363080c40edb0a4e51981a6424f
+  $w$cfoldr1 :: (a -> b -> b) -> b -> [a] -> a -> [a] -> b
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S,1*U><S,1*U><S,U><S,U><S,U>, Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   (w :: a -> b -> b)
+                   (w1 :: b)
+                   (ww :: [a])
+                   (ww1 :: a)
+                   (ww2 :: [a]) ->
+                 case w1 of acc { DEFAULT ->
+                 letrec {
+                   go :: [a] -> b -> b {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+                   = \ (ds2 :: [a]) (eta :: b) ->
+                     case ds2 of wild {
+                       [] -> eta : y ys -> case eta of z { DEFAULT -> go ys (w y z) } }
+                 } in
+                 go
+                   ww
+                   (w ww1
+                      (letrec {
+                         go1 :: [a] -> b {- Arity: 1, Strictness: <S,1*U> -}
+                         = \ (ds2 :: [a]) ->
+                           case ds2 of wild { [] -> acc : y ys -> w y (go1 ys) }
+                       } in
+                       go1 ww2)) }) -}
+859a59464ee5be186273d4517083a4d3
+  $wappendToLine :: [a] -> a -> [a] -> a -> (# [a], a, [a] #)
+  {- Arity: 4, HasNoCafRefs, Strictness: <S,U><S,U><S,U><S,1*U>,
+     Inline: [0] -}
+5a9fc3cf641c7698f3330ad24e448a36
+  $wconwayUpdate ::
+    [Lib.Line Lib.Cell]
+    -> [Lib.Cell]
+    -> Lib.Cell
+    -> [Lib.Cell]
+    -> [Lib.Line Lib.Cell]
+    -> Lib.Cell
+  {- Arity: 5, HasNoCafRefs, Strictness: <S,U><L,U><S,U><L,U><S,U>,
+     Inline: [0] -}
+8b72bc9bde8b485aabc6b7718fc8c02c
+  $wds ::
+    Lib.Drawable a =>
+    [Lib.Line a]
+    -> [a]
+    -> a
+    -> [a]
+    -> [Lib.Line a]
+    -> (# [Graphics.Gloss.Internals.Data.Picture.Picture] #)
+  {- Arity: 6, Strictness: <L,C(U)><S,U><L,U><L,U><L,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: Lib.Drawable a)
+                   (ww :: [Lib.Line a])
+                   (ww1 :: [a])
+                   (ww2 :: a)
+                   (ww3 :: [a])
+                   (ww4 :: [Lib.Line a]) ->
+                 case GHC.List.zipWith
+                        @ GHC.Types.Float
+                        @ Graphics.Gloss.Internals.Data.Picture.Picture
+                        @ Graphics.Gloss.Internals.Data.Picture.Picture
+                        Lib.$fDrawableGrid10
+                        Lib.$fDrawableGrid2
+                        (GHC.Base.map
+                           @ (Lib.Line a)
+                           @ Graphics.Gloss.Internals.Data.Picture.Picture
+                           (Lib.$fDrawableGrid9 @ a w)
+                           ww4) of downD { DEFAULT ->
+                 case GHC.List.zipWith
+                        @ GHC.Types.Float
+                        @ Graphics.Gloss.Internals.Data.Picture.Picture
+                        @ Graphics.Gloss.Internals.Data.Picture.Picture
+                        Lib.$fDrawableGrid10
+                        Lib.$fDrawableGrid5
+                        (GHC.Base.map
+                           @ (Lib.Line a)
+                           @ Graphics.Gloss.Internals.Data.Picture.Picture
+                           (Lib.$fDrawableGrid9 @ a w)
+                           ww) of upD { DEFAULT ->
+                 (# GHC.Types.:
+                      @ Graphics.Gloss.Internals.Data.Picture.Picture
+                      (case Lib.$wds1 @ a w ww1 ww2 ww3 of ww5 { Unit# ww6 ->
+                       Graphics.Gloss.Internals.Data.Picture.Pictures ww6 })
+                      (GHC.Base.++
+                         @ Graphics.Gloss.Internals.Data.Picture.Picture
+                         upD
+                         downD) #) } }) -}
+8b72bc9bde8b485aabc6b7718fc8c02c
+  $wds1 ::
+    Lib.Drawable a =>
+    [a]
+    -> a
+    -> [a]
+    -> (# [Graphics.Gloss.Internals.Data.Picture.Picture] #)
+  {- Arity: 4, Strictness: <L,C(U)><S,U><S,U><S,U>, Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: Lib.Drawable a)
+                   (ww :: [a])
+                   (ww1 :: a)
+                   (ww2 :: [a]) ->
+                 case GHC.List.zipWith
+                        @ GHC.Types.Float
+                        @ Graphics.Gloss.Internals.Data.Picture.Picture
+                        @ Graphics.Gloss.Internals.Data.Picture.Picture
+                        Lib.$fDrawableGrid_update
+                        Lib.$fDrawableGrid5
+                        (GHC.Base.map
+                           @ a
+                           @ Graphics.Gloss.Internals.Data.Picture.Picture
+                           w `cast` (Lib.N:Drawable[0] <a>_N)
+                           ww2) of rightD { DEFAULT ->
+                 case GHC.List.zipWith
+                        @ GHC.Types.Float
+                        @ Graphics.Gloss.Internals.Data.Picture.Picture
+                        @ Graphics.Gloss.Internals.Data.Picture.Picture
+                        Lib.$fDrawableGrid_update
+                        Lib.$fDrawableGrid2
+                        (GHC.Base.map
+                           @ a
+                           @ Graphics.Gloss.Internals.Data.Picture.Picture
+                           w `cast` (Lib.N:Drawable[0] <a>_N)
+                           ww) of leftD { DEFAULT ->
+                 (# GHC.Types.:
+                      @ Graphics.Gloss.Internals.Data.Picture.Picture
+                      (w `cast` (Lib.N:Drawable[0] <a>_N) ww1)
+                      (GHC.Base.++
+                         @ Graphics.Gloss.Internals.Data.Picture.Picture
+                         leftD
+                         rightD) #) } }) -}
+8effa8872b201b684cb5651e6d5a349b
+  $wds10 ::
+    (a -> b -> b)
+    -> b -> [Lib.Line a] -> [a] -> a -> [a] -> [Lib.Line a] -> b
+  {- Arity: 7, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,U><S,U><S,U><S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   (w :: a -> b -> b)
+                   (w1 :: b)
+                   (ww :: [Lib.Line a])
+                   (ww1 :: [a])
+                   (ww2 :: a)
+                   (ww3 :: [a])
+                   (ww4 :: [Lib.Line a]) ->
+                 (Lib.$w$cfoldr
+                    @ a
+                    @ (Data.Monoid.Dual (Data.Monoid.Endo (b -> b)))
+                    (\ (x2 :: a)
+                       (eta :: Data.Monoid.Dual (Data.Monoid.Endo (b -> b)))
+                       (eta1 :: b -> b) ->
+                     eta
+                       `cast`
+                     (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b -> b>_R))
+                       (\ (z :: b) -> case w x2 z of vx { DEFAULT -> eta1 vx }))
+                      `cast`
+                    (<a>_R
+                     ->_R <Data.Monoid.Dual (Data.Monoid.Endo (b -> b))>_R
+                     ->_R Sym (Data.Monoid.N:Dual[0]
+                                   (Data.Monoid.N:Endo[0] <b -> b>_R)))
+                    (GHC.Base.id @ (b -> b))
+                      `cast`
+                    (Sym (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b -> b>_R)))
+                    ww
+                    ww1
+                    ww2
+                    ww3
+                    ww4)
+                   `cast`
+                 (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b -> b>_R))
+                   (GHC.Base.id @ b)
+                   w1) -}
+83326bee070bb711fec87d5364a391a8
+  $wds11 ::
+    GHC.Base.Monoid m =>
+    [Lib.Line m] -> [m] -> m -> [m] -> [Lib.Line m] -> m
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <S(SLL),U(1*U,1*U,A)><S,U><S,U><S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ m
+                   (w :: GHC.Base.Monoid m)
+                   (ww :: [Lib.Line m])
+                   (ww1 :: [m])
+                   (ww2 :: m)
+                   (ww3 :: [m])
+                   (ww4 :: [Lib.Line m]) ->
+                 let {
+                   f1 :: m -> m -> m = GHC.Base.mappend @ m w
+                 } in
+                 Lib.$w$cfoldr
+                   @ m
+                   @ m
+                   (\ (x2 :: m) -> f1 x2)
+                   (GHC.Base.mempty @ m w)
+                   ww
+                   ww1
+                   ww2
+                   ww3
+                   ww4) -}
+f9ed5d593e80136fd99457bb260561cb
+  $wds12 :: GHC.Num.Num a => [a] -> a -> [a] -> Data.Monoid.Product a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LLLLLLC(S)),U(A,A,1*U,A,A,A,1*C1(U))><S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Num.Num a)
+                   (ww :: [a])
+                   (ww1 :: a)
+                   (ww2 :: [a]) ->
+                 let {
+                   f1 :: a -> a -> a = GHC.Num.* @ a w
+                 } in
+                 Lib.$w$cfoldr1
+                   @ a
+                   @ (Data.Monoid.Product a)
+                   (\ (x2 :: a) -> f1 x2)
+                     `cast`
+                   (<a>_R
+                    ->_R Sym (Data.Monoid.N:Product[0] <a>_R)
+                    ->_R Sym (Data.Monoid.N:Product[0] <a>_R))
+                   (GHC.Num.fromInteger @ a w Data.Monoid.$fMonoidProduct1)
+                     `cast`
+                   (Sym (Data.Monoid.N:Product[0] <a>_R))
+                   ww
+                   ww1
+                   ww2) -}
+88da466e40f4b3e1f32e136cbbd0d4dd
+  $wds13 :: GHC.Num.Num a => [a] -> a -> [a] -> Data.Monoid.Sum a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LLLLLLC(S)),U(1*U,A,A,A,A,A,1*C1(U))><S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Num.Num a)
+                   (ww :: [a])
+                   (ww1 :: a)
+                   (ww2 :: [a]) ->
+                 let {
+                   f1 :: a -> a -> a = GHC.Num.+ @ a w
+                 } in
+                 Lib.$w$cfoldr1
+                   @ a
+                   @ (Data.Monoid.Sum a)
+                   (\ (x2 :: a) -> f1 x2)
+                     `cast`
+                   (<a>_R
+                    ->_R Sym (Data.Monoid.N:Sum[0] <a>_R)
+                    ->_R Sym (Data.Monoid.N:Sum[0] <a>_R))
+                   (GHC.Num.fromInteger @ a w Data.Monoid.$fMonoidSum1)
+                     `cast`
+                   (Sym (Data.Monoid.N:Sum[0] <a>_R))
+                   ww
+                   ww1
+                   ww2) -}
+282f04184319592509ef877419294aa9
+  $wds14 :: GHC.Classes.Ord a => [a] -> a -> [a] -> a
+  {- Arity: 4,
+     Strictness: <L,U(A,A,A,C(C1(U)),A,A,A,A)><S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Classes.Ord a)
+                   (ww :: [a])
+                   (ww1 :: a)
+                   (ww2 :: [a]) ->
+                 case (Lib.$w$cfoldr1
+                         @ a
+                         @ (Data.Foldable.Min a)
+                         (\ (x2 :: a) (eta :: Data.Foldable.Min a) ->
+                          case eta `cast` (Data.Foldable.N:Min[0] <a>_N) of wild {
+                            GHC.Base.Nothing
+                            -> (GHC.Base.Just @ a x2)
+                                 `cast`
+                               (Sym (Data.Foldable.N:Min[0]) <a>_N)
+                            GHC.Base.Just ipv
+                            -> case GHC.Classes.<= @ a w x2 ipv of wild2 {
+                                 GHC.Types.False -> wild `cast` (Sym (Data.Foldable.N:Min[0]) <a>_N)
+                                 GHC.Types.True
+                                 -> (GHC.Base.Just @ a x2)
+                                      `cast`
+                                    (Sym (Data.Foldable.N:Min[0]) <a>_N) } })
+                         (GHC.Base.Nothing @ a) `cast` (Sym (Data.Foldable.N:Min[0]) <a>_N)
+                         ww
+                         ww1
+                         ww2)
+                        `cast`
+                      (Data.Foldable.N:Min[0] <a>_N) of wild {
+                   GHC.Base.Nothing -> Lib.$fFoldableGrid6 @ a
+                   GHC.Base.Just v -> v }) -}
+8d2712105f7e9925442d5af8b6d15231
+  $wds15 :: GHC.Classes.Ord a => [a] -> a -> [a] -> a
+  {- Arity: 4,
+     Strictness: <L,U(A,A,A,A,A,C(C1(U)),A,A)><S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Classes.Ord a)
+                   (ww :: [a])
+                   (ww1 :: a)
+                   (ww2 :: [a]) ->
+                 case (Lib.$w$cfoldr1
+                         @ a
+                         @ (Data.Foldable.Max a)
+                         (\ (x2 :: a) (eta :: Data.Foldable.Max a) ->
+                          case eta `cast` (Data.Foldable.N:Max[0] <a>_N) of wild {
+                            GHC.Base.Nothing
+                            -> (GHC.Base.Just @ a x2)
+                                 `cast`
+                               (Sym (Data.Foldable.N:Max[0]) <a>_N)
+                            GHC.Base.Just ipv
+                            -> case GHC.Classes.>= @ a w x2 ipv of wild2 {
+                                 GHC.Types.False -> wild `cast` (Sym (Data.Foldable.N:Max[0]) <a>_N)
+                                 GHC.Types.True
+                                 -> (GHC.Base.Just @ a x2)
+                                      `cast`
+                                    (Sym (Data.Foldable.N:Max[0]) <a>_N) } })
+                         (GHC.Base.Nothing @ a) `cast` (Sym (Data.Foldable.N:Max[0]) <a>_N)
+                         ww
+                         ww1
+                         ww2)
+                        `cast`
+                      (Data.Foldable.N:Max[0] <a>_N) of wild {
+                   GHC.Base.Nothing -> Lib.$fFoldableGrid8 @ a
+                   GHC.Base.Just v -> v }) -}
+b75a661541c750dfab31a1bb05423640
+  $wds16 :: (a -> a -> a) -> [a] -> a -> [a] -> a
+  {- Arity: 4, Strictness: <L,C(C1(U))><S,U><S,U><S,U>, Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: a -> a -> a)
+                   (ww :: [a])
+                   (ww1 :: a)
+                   (ww2 :: [a]) ->
+                 case (Lib.$w$cfoldr1
+                         @ a
+                         @ (Data.Monoid.Dual (Data.Monoid.Endo (GHC.Base.Maybe a)))
+                         (\ (x2 :: a)
+                            (eta :: Data.Monoid.Dual (Data.Monoid.Endo (GHC.Base.Maybe a)))
+                            (eta1 :: GHC.Base.Maybe a) ->
+                          eta
+                            `cast`
+                          (Data.Monoid.N:Dual[0]
+                               (Data.Monoid.N:Endo[0] <GHC.Base.Maybe a>_R))
+                            (GHC.Base.Just
+                               @ a
+                               (case eta1 of wild {
+                                  GHC.Base.Nothing -> x2 GHC.Base.Just x3 -> w x3 x2 })))
+                           `cast`
+                         (<a>_R
+                          ->_R <Data.Monoid.Dual (Data.Monoid.Endo (GHC.Base.Maybe a))>_R
+                          ->_R Sym (Data.Monoid.N:Dual[0]
+                                        (Data.Monoid.N:Endo[0] <GHC.Base.Maybe a>_R)))
+                         (GHC.Base.id @ (GHC.Base.Maybe a))
+                           `cast`
+                         (Sym (Data.Monoid.N:Dual[0]
+                                   (Data.Monoid.N:Endo[0] <GHC.Base.Maybe a>_R)))
+                         ww
+                         ww1
+                         ww2)
+                        `cast`
+                      (Data.Monoid.N:Dual[0]
+                           (Data.Monoid.N:Endo[0] <GHC.Base.Maybe a>_R))
+                        (GHC.Base.Nothing @ a) of wild {
+                   GHC.Base.Nothing -> Lib.$fFoldableGrid17 @ a
+                   GHC.Base.Just v -> v }) -}
+640f1756425780bb817d42e8aa1bb17b
+  $wds17 :: (a -> a -> a) -> [a] -> a -> [a] -> a
+  {- Arity: 4, Strictness: <L,C(C1(U))><S,U><S,U><S,U>, Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: a -> a -> a)
+                   (ww :: [a])
+                   (ww1 :: a)
+                   (ww2 :: [a]) ->
+                 case Lib.$w$cfoldr1
+                        @ a
+                        @ (GHC.Base.Maybe a)
+                        (\ (x2 :: a) (m :: GHC.Base.Maybe a) ->
+                         GHC.Base.Just
+                           @ a
+                           (case m of wild {
+                              GHC.Base.Nothing -> x2 GHC.Base.Just y -> w x2 y }))
+                        (GHC.Base.Nothing @ a)
+                        ww
+                        ww1
+                        ww2 of wild {
+                   GHC.Base.Nothing -> Lib.$fFoldableGrid19 @ a
+                   GHC.Base.Just v -> v }) -}
+7fbf20a741505247d86d9cae86453f90
+  $wds18 :: (b -> a -> b) -> b -> [a] -> a -> [a] -> b
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,U><S,U><S,U><S,U>, Inline: [0],
+     Unfolding: (\ @ b
+                   @ a
+                   (w :: b -> a -> b)
+                   (w1 :: b)
+                   (ww :: [a])
+                   (ww1 :: a)
+                   (ww2 :: [a]) ->
+                 Lib.$w$cfoldr1
+                   @ a
+                   @ (b -> b)
+                   (\ (x2 :: a) (k :: b -> b) (z :: b) ->
+                    case w z x2 of vx { DEFAULT -> k vx })
+                   (GHC.Base.id @ b)
+                   ww
+                   ww1
+                   ww2
+                   w1) -}
+0fc571a200f084da6053b732a977793d
+  $wds19 :: (b -> a -> b) -> b -> [a] -> a -> [a] -> b
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,U><S,U><S,U><S,U>, Inline: [0],
+     Unfolding: (\ @ b
+                   @ a
+                   (w :: b -> a -> b)
+                   (w1 :: b)
+                   (ww :: [a])
+                   (ww1 :: a)
+                   (ww2 :: [a]) ->
+                 (Lib.$w$cfoldr1
+                    @ a
+                    @ (Data.Monoid.Dual (Data.Monoid.Endo b))
+                    (\ (x2 :: a)
+                       (eta :: Data.Monoid.Dual (Data.Monoid.Endo b))
+                       (eta1 :: b) ->
+                     eta `cast` (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b>_R))
+                       (w eta1 x2))
+                      `cast`
+                    (<a>_R
+                     ->_R <Data.Monoid.Dual (Data.Monoid.Endo b)>_R
+                     ->_R Sym (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b>_R)))
+                    (GHC.Base.id @ b)
+                      `cast`
+                    (Sym (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b>_R)))
+                    ww
+                    ww1
+                    ww2)
+                   `cast`
+                 (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b>_R))
+                   w1) -}
+9748dd154a9a49c144953060636ff3c3
+  $wds2 ::
+    GHC.Num.Num a =>
+    [Lib.Line a]
+    -> [a] -> a -> [a] -> [Lib.Line a] -> Data.Monoid.Product a
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <S(LLLLLLC(S)),U(A,A,1*U,A,A,A,1*C1(U))><S,U><S,U><S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Num.Num a)
+                   (ww :: [Lib.Line a])
+                   (ww1 :: [a])
+                   (ww2 :: a)
+                   (ww3 :: [a])
+                   (ww4 :: [Lib.Line a]) ->
+                 let {
+                   f1 :: a -> a -> a = GHC.Num.* @ a w
+                 } in
+                 Lib.$w$cfoldr
+                   @ a
+                   @ (Data.Monoid.Product a)
+                   (\ (x2 :: a) -> f1 x2)
+                     `cast`
+                   (<a>_R
+                    ->_R Sym (Data.Monoid.N:Product[0] <a>_R)
+                    ->_R Sym (Data.Monoid.N:Product[0] <a>_R))
+                   (GHC.Num.fromInteger @ a w Data.Monoid.$fMonoidProduct1)
+                     `cast`
+                   (Sym (Data.Monoid.N:Product[0] <a>_R))
+                   ww
+                   ww1
+                   ww2
+                   ww3
+                   ww4) -}
+79a61a792281d90b01fc2dc2d9b9ef82
+  $wds20 :: (a -> b -> b) -> b -> [a] -> a -> [a] -> b
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,U><S,U><S,U><S,U>, Inline: [0],
+     Unfolding: (\ @ a
+                   @ b
+                   (w :: a -> b -> b)
+                   (w1 :: b)
+                   (ww :: [a])
+                   (ww1 :: a)
+                   (ww2 :: [a]) ->
+                 (Lib.$w$cfoldr1
+                    @ a
+                    @ (Data.Monoid.Dual (Data.Monoid.Endo (b -> b)))
+                    (\ (x2 :: a)
+                       (eta :: Data.Monoid.Dual (Data.Monoid.Endo (b -> b)))
+                       (eta1 :: b -> b) ->
+                     eta
+                       `cast`
+                     (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b -> b>_R))
+                       (\ (z :: b) -> case w x2 z of vx { DEFAULT -> eta1 vx }))
+                      `cast`
+                    (<a>_R
+                     ->_R <Data.Monoid.Dual (Data.Monoid.Endo (b -> b))>_R
+                     ->_R Sym (Data.Monoid.N:Dual[0]
+                                   (Data.Monoid.N:Endo[0] <b -> b>_R)))
+                    (GHC.Base.id @ (b -> b))
+                      `cast`
+                    (Sym (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b -> b>_R)))
+                    ww
+                    ww1
+                    ww2)
+                   `cast`
+                 (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b -> b>_R))
+                   (GHC.Base.id @ b)
+                   w1) -}
+88e58e183d3f6bb609a03a10ab598be9
+  $wds21 :: GHC.Base.Monoid m => [m] -> m -> [m] -> m
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(SLL),U(1*U,1*U,A)><S,U><S,U><S,U>, Inline: [0],
+     Unfolding: (\ @ m
+                   (w :: GHC.Base.Monoid m)
+                   (ww :: [m])
+                   (ww1 :: m)
+                   (ww2 :: [m]) ->
+                 let {
+                   f1 :: m -> m -> m = GHC.Base.mappend @ m w
+                 } in
+                 Lib.$w$cfoldr1
+                   @ m
+                   @ m
+                   (\ (x2 :: m) -> f1 x2)
+                   (GHC.Base.mempty @ m w)
+                   ww
+                   ww1
+                   ww2) -}
+2f5d1f4de9d1e914ea97690305e293fd
+  $wds22 ::
+    GHC.Show.Show a =>
+    [Lib.Line a] -> [a] -> a -> [a] -> [Lib.Line a] -> GHC.Base.String
+  {- Arity: 6, Strictness: <L,U(A,U,A)><S,U><L,U><L,U><L,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (ww :: [Lib.Line a])
+                   (ww1 :: [a])
+                   (ww2 :: a)
+                   (ww3 :: [a])
+                   (ww4 :: [Lib.Line a]) ->
+                 letrec {
+                   go :: [Lib.Line a] -> [GHC.Types.Char]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds2 :: [Lib.Line a]) ->
+                     case ds2 of wild {
+                       [] -> GHC.Types.[] @ GHC.Types.Char
+                       : y ys
+                       -> case y of ww5 { Lib.Line ww6 ww7 ww8 ->
+                          GHC.Base.++
+                            @ GHC.Types.Char
+                            (Lib.$wds23 @ a w ww6 ww7 ww8)
+                            (GHC.Base.++ @ GHC.Types.Char Lib.$fShowGrid2 (go ys)) } }
+                 } in
+                 case go ww4 of doSh { DEFAULT ->
+                 letrec {
+                   go1 :: [Lib.Line a] -> [GHC.Types.Char] -> [GHC.Types.Char]
+                     {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+                   = \ (ds2 :: [Lib.Line a]) (eta :: [GHC.Types.Char]) ->
+                     case ds2 of wild {
+                       [] -> eta
+                       : y ys
+                       -> case eta of z { DEFAULT ->
+                          case y of ww5 { Lib.Line ww6 ww7 ww8 ->
+                          go1
+                            ys
+                            (GHC.Base.++
+                               @ GHC.Types.Char
+                               (GHC.Base.++
+                                  @ GHC.Types.Char
+                                  (Lib.$wds23 @ a w ww6 ww7 ww8)
+                                  Lib.$fShowGrid2)
+                               z) } } }
+                 } in
+                 case go1 ww (GHC.Types.[] @ GHC.Types.Char) of upSh { DEFAULT ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   upSh
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      (Lib.$wds23 @ a w ww1 ww2 ww3)
+                      (GHC.CString.unpackAppendCString# "\n"# doSh)) } }) -}
+0a12db7572bb9248e1f8d7bb50764c9b
+  $wds23 :: GHC.Show.Show a => [a] -> a -> [a] -> [GHC.Types.Char]
+  {- Arity: 4, Strictness: <L,1*U(A,1*U,A)><S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (ww :: [a])
+                   (ww1 :: a)
+                   (ww2 :: [a]) ->
+                 let {
+                   g :: a -> [GHC.Types.Char] = GHC.Show.show @ a w
+                 } in
+                 Lib.$w$cfoldr1
+                   @ a
+                   @ [GHC.Types.Char]
+                   (\ (x2 :: a) (b2 :: [GHC.Types.Char]) ->
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      (g x2)
+                      (GHC.Base.++ @ GHC.Types.Char Lib.$fShowCell3 b2))
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   ww
+                   ww1
+                   ww2) -}
+e703cdff5ae3db1045dc8bb61af25b3c
+  $wds3 ::
+    GHC.Num.Num a =>
+    [Lib.Line a]
+    -> [a] -> a -> [a] -> [Lib.Line a] -> Data.Monoid.Sum a
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <S(LLLLLLC(S)),U(1*U,A,A,A,A,A,1*C1(U))><S,U><S,U><S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Num.Num a)
+                   (ww :: [Lib.Line a])
+                   (ww1 :: [a])
+                   (ww2 :: a)
+                   (ww3 :: [a])
+                   (ww4 :: [Lib.Line a]) ->
+                 let {
+                   f1 :: a -> a -> a = GHC.Num.+ @ a w
+                 } in
+                 Lib.$w$cfoldr
+                   @ a
+                   @ (Data.Monoid.Sum a)
+                   (\ (x2 :: a) -> f1 x2)
+                     `cast`
+                   (<a>_R
+                    ->_R Sym (Data.Monoid.N:Sum[0] <a>_R)
+                    ->_R Sym (Data.Monoid.N:Sum[0] <a>_R))
+                   (GHC.Num.fromInteger @ a w Data.Monoid.$fMonoidSum1)
+                     `cast`
+                   (Sym (Data.Monoid.N:Sum[0] <a>_R))
+                   ww
+                   ww1
+                   ww2
+                   ww3
+                   ww4) -}
+00110479ab745cc3c57a05b92a4fec84
+  $wds4 ::
+    GHC.Classes.Ord a =>
+    [Lib.Line a] -> [a] -> a -> [a] -> [Lib.Line a] -> a
+  {- Arity: 6,
+     Strictness: <L,U(A,A,A,C(C1(U)),A,A,A,A)><S,U><S,U><S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Classes.Ord a)
+                   (ww :: [Lib.Line a])
+                   (ww1 :: [a])
+                   (ww2 :: a)
+                   (ww3 :: [a])
+                   (ww4 :: [Lib.Line a]) ->
+                 case (Lib.$w$cfoldr
+                         @ a
+                         @ (Data.Foldable.Min a)
+                         (\ (x2 :: a) (eta :: Data.Foldable.Min a) ->
+                          case eta `cast` (Data.Foldable.N:Min[0] <a>_N) of wild {
+                            GHC.Base.Nothing
+                            -> (GHC.Base.Just @ a x2)
+                                 `cast`
+                               (Sym (Data.Foldable.N:Min[0]) <a>_N)
+                            GHC.Base.Just ipv
+                            -> case GHC.Classes.<= @ a w x2 ipv of wild2 {
+                                 GHC.Types.False -> wild `cast` (Sym (Data.Foldable.N:Min[0]) <a>_N)
+                                 GHC.Types.True
+                                 -> (GHC.Base.Just @ a x2)
+                                      `cast`
+                                    (Sym (Data.Foldable.N:Min[0]) <a>_N) } })
+                         (GHC.Base.Nothing @ a) `cast` (Sym (Data.Foldable.N:Min[0]) <a>_N)
+                         ww
+                         ww1
+                         ww2
+                         ww3
+                         ww4)
+                        `cast`
+                      (Data.Foldable.N:Min[0] <a>_N) of wild {
+                   GHC.Base.Nothing -> Lib.$fFoldableGrid6 @ a
+                   GHC.Base.Just v -> v }) -}
+9f2d79ae762ab087db4397474b6970ad
+  $wds5 ::
+    GHC.Classes.Ord a =>
+    [Lib.Line a] -> [a] -> a -> [a] -> [Lib.Line a] -> a
+  {- Arity: 6,
+     Strictness: <L,U(A,A,A,A,A,C(C1(U)),A,A)><S,U><S,U><S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Classes.Ord a)
+                   (ww :: [Lib.Line a])
+                   (ww1 :: [a])
+                   (ww2 :: a)
+                   (ww3 :: [a])
+                   (ww4 :: [Lib.Line a]) ->
+                 case (Lib.$w$cfoldr
+                         @ a
+                         @ (Data.Foldable.Max a)
+                         (\ (x2 :: a) (eta :: Data.Foldable.Max a) ->
+                          case eta `cast` (Data.Foldable.N:Max[0] <a>_N) of wild {
+                            GHC.Base.Nothing
+                            -> (GHC.Base.Just @ a x2)
+                                 `cast`
+                               (Sym (Data.Foldable.N:Max[0]) <a>_N)
+                            GHC.Base.Just ipv
+                            -> case GHC.Classes.>= @ a w x2 ipv of wild2 {
+                                 GHC.Types.False -> wild `cast` (Sym (Data.Foldable.N:Max[0]) <a>_N)
+                                 GHC.Types.True
+                                 -> (GHC.Base.Just @ a x2)
+                                      `cast`
+                                    (Sym (Data.Foldable.N:Max[0]) <a>_N) } })
+                         (GHC.Base.Nothing @ a) `cast` (Sym (Data.Foldable.N:Max[0]) <a>_N)
+                         ww
+                         ww1
+                         ww2
+                         ww3
+                         ww4)
+                        `cast`
+                      (Data.Foldable.N:Max[0] <a>_N) of wild {
+                   GHC.Base.Nothing -> Lib.$fFoldableGrid8 @ a
+                   GHC.Base.Just v -> v }) -}
+ae7d4f39922f1218da2acd5d151e0f9d
+  $wds6 ::
+    (a -> a -> a)
+    -> [Lib.Line a] -> [a] -> a -> [a] -> [Lib.Line a] -> a
+  {- Arity: 6, Strictness: <L,C(C1(U))><S,U><S,U><S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: a -> a -> a)
+                   (ww :: [Lib.Line a])
+                   (ww1 :: [a])
+                   (ww2 :: a)
+                   (ww3 :: [a])
+                   (ww4 :: [Lib.Line a]) ->
+                 case (Lib.$w$cfoldr
+                         @ a
+                         @ (Data.Monoid.Dual (Data.Monoid.Endo (GHC.Base.Maybe a)))
+                         (\ (x2 :: a)
+                            (eta :: Data.Monoid.Dual (Data.Monoid.Endo (GHC.Base.Maybe a)))
+                            (eta1 :: GHC.Base.Maybe a) ->
+                          eta
+                            `cast`
+                          (Data.Monoid.N:Dual[0]
+                               (Data.Monoid.N:Endo[0] <GHC.Base.Maybe a>_R))
+                            (GHC.Base.Just
+                               @ a
+                               (case eta1 of wild {
+                                  GHC.Base.Nothing -> x2 GHC.Base.Just x3 -> w x3 x2 })))
+                           `cast`
+                         (<a>_R
+                          ->_R <Data.Monoid.Dual (Data.Monoid.Endo (GHC.Base.Maybe a))>_R
+                          ->_R Sym (Data.Monoid.N:Dual[0]
+                                        (Data.Monoid.N:Endo[0] <GHC.Base.Maybe a>_R)))
+                         (GHC.Base.id @ (GHC.Base.Maybe a))
+                           `cast`
+                         (Sym (Data.Monoid.N:Dual[0]
+                                   (Data.Monoid.N:Endo[0] <GHC.Base.Maybe a>_R)))
+                         ww
+                         ww1
+                         ww2
+                         ww3
+                         ww4)
+                        `cast`
+                      (Data.Monoid.N:Dual[0]
+                           (Data.Monoid.N:Endo[0] <GHC.Base.Maybe a>_R))
+                        (GHC.Base.Nothing @ a) of wild {
+                   GHC.Base.Nothing -> Lib.$fFoldableGrid17 @ a
+                   GHC.Base.Just v -> v }) -}
+3cd4f89d7d5c2d2164887b8c6612c017
+  $wds7 ::
+    (a -> a -> a)
+    -> [Lib.Line a] -> [a] -> a -> [a] -> [Lib.Line a] -> a
+  {- Arity: 6, Strictness: <L,C(C1(U))><S,U><S,U><S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: a -> a -> a)
+                   (ww :: [Lib.Line a])
+                   (ww1 :: [a])
+                   (ww2 :: a)
+                   (ww3 :: [a])
+                   (ww4 :: [Lib.Line a]) ->
+                 case Lib.$w$cfoldr
+                        @ a
+                        @ (GHC.Base.Maybe a)
+                        (\ (x2 :: a) (m :: GHC.Base.Maybe a) ->
+                         GHC.Base.Just
+                           @ a
+                           (case m of wild {
+                              GHC.Base.Nothing -> x2 GHC.Base.Just y -> w x2 y }))
+                        (GHC.Base.Nothing @ a)
+                        ww
+                        ww1
+                        ww2
+                        ww3
+                        ww4 of wild {
+                   GHC.Base.Nothing -> Lib.$fFoldableGrid19 @ a
+                   GHC.Base.Just v -> v }) -}
+8b8c87f2795a289d54b6984b146ac530
+  $wds8 ::
+    (b -> a -> b)
+    -> b -> [Lib.Line a] -> [a] -> a -> [a] -> [Lib.Line a] -> b
+  {- Arity: 7, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,U><S,U><S,U><S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ b
+                   @ a
+                   (w :: b -> a -> b)
+                   (w1 :: b)
+                   (ww :: [Lib.Line a])
+                   (ww1 :: [a])
+                   (ww2 :: a)
+                   (ww3 :: [a])
+                   (ww4 :: [Lib.Line a]) ->
+                 Lib.$w$cfoldr
+                   @ a
+                   @ (b -> b)
+                   (\ (x2 :: a) (k :: b -> b) (z :: b) ->
+                    case w z x2 of vx { DEFAULT -> k vx })
+                   (GHC.Base.id @ b)
+                   ww
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   w1) -}
+a52025366b5e591fb3834b2ef7388dad
+  $wds9 ::
+    (b -> a -> b)
+    -> b -> [Lib.Line a] -> [a] -> a -> [a] -> [Lib.Line a] -> b
+  {- Arity: 7, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,U><S,U><S,U><S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ b
+                   @ a
+                   (w :: b -> a -> b)
+                   (w1 :: b)
+                   (ww :: [Lib.Line a])
+                   (ww1 :: [a])
+                   (ww2 :: a)
+                   (ww3 :: [a])
+                   (ww4 :: [Lib.Line a]) ->
+                 (Lib.$w$cfoldr
+                    @ a
+                    @ (Data.Monoid.Dual (Data.Monoid.Endo b))
+                    (\ (x2 :: a)
+                       (eta :: Data.Monoid.Dual (Data.Monoid.Endo b))
+                       (eta1 :: b) ->
+                     eta `cast` (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b>_R))
+                       (w eta1 x2))
+                      `cast`
+                    (<a>_R
+                     ->_R <Data.Monoid.Dual (Data.Monoid.Endo b)>_R
+                     ->_R Sym (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b>_R)))
+                    (GHC.Base.id @ b)
+                      `cast`
+                    (Sym (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b>_R)))
+                    ww
+                    ww1
+                    ww2
+                    ww3
+                    ww4)
+                   `cast`
+                 (Data.Monoid.N:Dual[0] (Data.Monoid.N:Endo[0] <b>_R))
+                   w1) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $wgridConfigurations ::
+    [Lib.Line a]
+    -> [a]
+    -> a
+    -> [a]
+    -> [Lib.Line a]
+    -> (# [Lib.Line (Lib.Grid a)], Lib.Line (Lib.Grid a),
+          [Lib.Line (Lib.Grid a)] #)
+  {- Arity: 5, HasNoCafRefs, Strictness: <S,U><S,U><L,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (ww :: [Lib.Line a])
+                   (ww1 :: [a])
+                   (ww2 :: a)
+                   (ww3 :: [a])
+                   (ww4 :: [Lib.Line a]) ->
+                 let {
+                   ds2 :: Lib.Line a = Lib.Line @ a ww1 ww2 ww3
+                 } in
+                 let {
+                   wild :: Lib.Grid a = Lib.Grid @ a ww ds2 ww4
+                 } in
+                 let {
+                   lvl6 :: (Lib.Grid a -> Lib.Grid a) -> Lib.Grid a
+                     {- Arity: 1, Strictness: <C(S),1*C1(U(U,U,U))>,
+                        Unfolding: InlineRule (1, True, True)
+                                   (\ (ds3 :: Lib.Grid a -> Lib.Grid a) -> ds3 wild) -}
+                   = \ (ds3 :: Lib.Grid a -> Lib.Grid a) -> ds3 wild
+                 } in
+                 let {
+                   confs :: forall a1.
+                            [a1] -> (Lib.Grid a -> Lib.Grid a) -> [Lib.Grid a]
+                     {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+                   = \ @ a1 (ls :: [a1]) (f :: Lib.Grid a -> Lib.Grid a)[OneShot] ->
+                     case f of f1 { DEFAULT ->
+                     letrec {
+                       go :: [a1]
+                             -> (Lib.Grid a -> Lib.Grid a) -> [Lib.Grid a -> Lib.Grid a]
+                         {- Arity: 2, Strictness: <S,1*U><L,C(U(U,U,U))> -}
+                       = \ (ds3 :: [a1]) (eta :: Lib.Grid a -> Lib.Grid a) ->
+                         case ds3 of wild1 {
+                           [] -> GHC.Types.[] @ (Lib.Grid a -> Lib.Grid a)
+                           : y ys
+                           -> let {
+                                b' :: Lib.Grid a -> Lib.Grid a
+                                  {- Arity: 1, Strictness: <L,U>,
+                                     Unfolding: InlineRule (1, True, False)
+                                                (\ (x2 :: Lib.Grid a) ->
+                                                 eta (case y of ds4 { DEFAULT -> f1 x2 })) -}
+                                = \ (x2 :: Lib.Grid a) -> eta (case y of ds4 { DEFAULT -> f1 x2 })
+                              } in
+                              GHC.Types.: @ (Lib.Grid a -> Lib.Grid a) b' (go ys b') }
+                     } in
+                     GHC.Base.map
+                       @ (Lib.Grid a -> Lib.Grid a)
+                       @ (Lib.Grid a)
+                       lvl6
+                       (go ls (GHC.Base.id @ (Lib.Grid a))) }
+                 } in
+                 case confs
+                        @ (Lib.Line a)
+                        ww
+                        (Lib.moveUpGrid @ a) of uConfs { DEFAULT ->
+                 case confs
+                        @ (Lib.Line a)
+                        ww4
+                        (Lib.moveDownGrid @ a) of dConfs { DEFAULT ->
+                 case GHC.Base.map
+                        @ (Lib.Grid a)
+                        @ (Lib.Line (Lib.Grid a))
+                        (Lib.horizontalConfigurations @ a)
+                        dConfs of down { DEFAULT ->
+                 case GHC.Base.map
+                        @ (Lib.Grid a)
+                        @ (Lib.Line (Lib.Grid a))
+                        (Lib.horizontalConfigurations @ a)
+                        uConfs of up { DEFAULT ->
+                 case Lib.$whorizontalConfigurations
+                        @ a
+                        ww
+                        ww1
+                        ww2
+                        ww3
+                        ww4 of ww5 { (#,,#) ww6 ww7 ww8 ->
+                 (# up, Lib.Line @ (Lib.Grid a) ww6 ww7 ww8, down #) } } } } }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  $whorizontalConfigurations ::
+    [Lib.Line a]
+    -> [a]
+    -> a
+    -> [a]
+    -> [Lib.Line a]
+    -> (# [Lib.Grid a], Lib.Grid a, [Lib.Grid a] #)
+  {- Arity: 5, HasNoCafRefs, Strictness: <S,U><S,U><L,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (ww :: [Lib.Line a])
+                   (ww1 :: [a])
+                   (ww2 :: a)
+                   (ww3 :: [a])
+                   (ww4 :: [Lib.Line a]) ->
+                 let {
+                   ds2 :: Lib.Line a = Lib.Line @ a ww1 ww2 ww3
+                 } in
+                 let {
+                   wild :: Lib.Grid a = Lib.Grid @ a ww ds2 ww4
+                 } in
+                 let {
+                   lvl6 :: (Lib.Grid a -> Lib.Grid a) -> Lib.Grid a
+                     {- Arity: 1, Strictness: <C(S),1*C1(U(U,U,U))>,
+                        Unfolding: InlineRule (1, True, True)
+                                   (\ (ds3 :: Lib.Grid a -> Lib.Grid a) -> ds3 wild) -}
+                   = \ (ds3 :: Lib.Grid a -> Lib.Grid a) -> ds3 wild
+                 } in
+                 let {
+                   confs :: forall a1.
+                            [a1] -> (Lib.Grid a -> Lib.Grid a) -> [Lib.Grid a]
+                     {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+                   = \ @ a1 (ls :: [a1]) (f :: Lib.Grid a -> Lib.Grid a)[OneShot] ->
+                     case f of f1 { DEFAULT ->
+                     letrec {
+                       go :: [a1]
+                             -> (Lib.Grid a -> Lib.Grid a) -> [Lib.Grid a -> Lib.Grid a]
+                         {- Arity: 2, Strictness: <S,1*U><L,C(U(U,U,U))> -}
+                       = \ (ds3 :: [a1]) (eta :: Lib.Grid a -> Lib.Grid a) ->
+                         case ds3 of wild1 {
+                           [] -> GHC.Types.[] @ (Lib.Grid a -> Lib.Grid a)
+                           : y ys
+                           -> let {
+                                b' :: Lib.Grid a -> Lib.Grid a
+                                  {- Arity: 1, Strictness: <L,U>,
+                                     Unfolding: InlineRule (1, True, False)
+                                                (\ (x2 :: Lib.Grid a) ->
+                                                 eta (case y of ds4 { DEFAULT -> f1 x2 })) -}
+                                = \ (x2 :: Lib.Grid a) -> eta (case y of ds4 { DEFAULT -> f1 x2 })
+                              } in
+                              GHC.Types.: @ (Lib.Grid a -> Lib.Grid a) b' (go ys b') }
+                     } in
+                     GHC.Base.map
+                       @ (Lib.Grid a -> Lib.Grid a)
+                       @ (Lib.Grid a)
+                       lvl6
+                       (go ls (GHC.Base.id @ (Lib.Grid a))) }
+                 } in
+                 case confs @ a ww1 (Lib.moveLeftGrid @ a) of leftC { DEFAULT ->
+                 case confs @ a ww3 (Lib.moveRightGrid @ a) of rightC { DEFAULT ->
+                 (# leftC, wild, rightC #) } }) -}
+d087f197f27f421159abcd8464ae9ad7
+  $wlowerNeighb :: [Lib.Line a] -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ @ a (ww :: [Lib.Line a]) ->
+                 case ww of wild {
+                   [] -> GHC.Types.[] @ a
+                   : u ds2
+                   -> case u of wild1 { Lib.Line ds3 x2 ds4 ->
+                      case ds3 of wild2 {
+                        []
+                        -> case ds4 of wild3 {
+                             [] -> GHC.Types.: @ a x2 (GHC.Types.[] @ a)
+                             : r ds5
+                             -> GHC.Types.: @ a x2 (GHC.Types.: @ a r (GHC.Types.[] @ a)) }
+                        : l ds5
+                        -> case ds4 of wild3 {
+                             [] -> GHC.Types.: @ a l (GHC.Types.: @ a x2 (GHC.Types.[] @ a))
+                             : r ds6
+                             -> GHC.Types.:
+                                  @ a
+                                  l
+                                  (GHC.Types.:
+                                     @ a
+                                     x2
+                                     (GHC.Types.: @ a r (GHC.Types.[] @ a))) } } } }) -}
+d09d552bc7cacf2c96435fe48bef78fa
+  $wupperNeighb :: [Lib.Line a] -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ @ a (ww :: [Lib.Line a]) ->
+                 case ww of wild {
+                   [] -> GHC.Types.[] @ a
+                   : u ds2
+                   -> case u of wild1 { Lib.Line ds3 x2 ds4 ->
+                      case ds3 of wild2 {
+                        []
+                        -> case ds4 of wild3 {
+                             [] -> GHC.Types.: @ a x2 (GHC.Types.[] @ a)
+                             : r ds5
+                             -> GHC.Types.: @ a x2 (GHC.Types.: @ a r (GHC.Types.[] @ a)) }
+                        : l ds5
+                        -> case ds4 of wild3 {
+                             [] -> GHC.Types.: @ a l (GHC.Types.: @ a x2 (GHC.Types.[] @ a))
+                             : r ds6
+                             -> GHC.Types.:
+                                  @ a
+                                  l
+                                  (GHC.Types.:
+                                     @ a
+                                     x2
+                                     (GHC.Types.: @ a r (GHC.Types.[] @ a))) } } } }) -}
+23cd0b7fef80daac2198ffa50181499f
+  $wxs :: GHC.Prim.Int# -> [Lib.Line Lib.Cell]
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+982cfd9c45be0b136a2314867a1ee040
+  $wxs1 :: GHC.Prim.Int# -> [Lib.Cell]
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+40f3393710297e7ef141f39dcf030f4f
+  $wxs2 :: GHC.Prim.Int# -> [Lib.Cell]
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+d94a0dd7771101bec87438bc4fd99f04
+  $wxs3 ::
+    GHC.Prim.Int# -> (# Lib.Line Lib.Cell, [Lib.Line Lib.Cell] #)
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+463a0832461734b6986e0096eed3bf84
+  data Cell = Alive | Dead
+8b72bc9bde8b485aabc6b7718fc8c02c
+  class Drawable a where
+    draw :: a -> Graphics.Gloss.Internals.Data.Picture.Picture
+    {-# MINIMAL draw #-}
+0617a376aa7ae92da7f628e208b0acf1
+  data Grid a
+    = Grid {_up :: ![Lib.Line a],
+            _mid :: !Lib.Line a,
+            _down :: ![Lib.Line a]}
+7110f7785a08e5d4e2132fd8569c9589
+  data Line a = Line {_left :: ![a], _center :: !a, _right :: ![a]}
+a7b8607d3c4d78ae80d93183e98eea8a
+  _center :: Lib.Line a -> a
+  RecSel Left Lib.Line
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds2 :: Lib.Line a) ->
+                 case ds2 of wild { Lib.Line ds3 ds4 ds5 -> ds4 }) -}
+550be4883ed054666f91c99b2cc79a3e
+  _down :: Lib.Grid a -> [Lib.Line a]
+  RecSel Left Lib.Grid
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds2 :: Lib.Grid a) ->
+                 case ds2 of wild { Lib.Grid ds3 ds4 ds5 -> ds5 }) -}
+6cbe8afbc0baea8dbcad440d0e5fab6c
+  _left :: Lib.Line a -> [a]
+  RecSel Left Lib.Line
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds2 :: Lib.Line a) ->
+                 case ds2 of wild { Lib.Line ds3 ds4 ds5 -> ds3 }) -}
+8926f8de228d14db235a58353dbda215
+  _mid :: Lib.Grid a -> Lib.Line a
+  RecSel Left Lib.Grid
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,U(U,U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds2 :: Lib.Grid a) ->
+                 case ds2 of wild { Lib.Grid ds3 ds4 ds5 -> ds4 }) -}
+8194faafd04fe25a1b2b1c648f8d3c66
+  _right :: Lib.Line a -> [a]
+  RecSel Left Lib.Line
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds2 :: Lib.Line a) ->
+                 case ds2 of wild { Lib.Line ds3 ds4 ds5 -> ds5 }) -}
+47bd94865bc2bec7e4c8a2293d0d8622
+  _up :: Lib.Grid a -> [Lib.Line a]
+  RecSel Left Lib.Grid
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds2 :: Lib.Grid a) ->
+                 case ds2 of wild { Lib.Grid ds3 ds4 ds5 -> ds3 }) -}
+1b73ce2e42d55797227021cb855ab62f
+  appendToLine :: Lib.Line a -> a -> Lib.Line a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(SSS),1*U(U,U,U)><S,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: Lib.Line a) (w1 :: a) ->
+                 case w of ww { Lib.Line ww1 ww2 ww3 ->
+                 case Lib.$wappendToLine
+                        @ a
+                        ww1
+                        ww2
+                        ww3
+                        w1 of ww4 { (#,,#) ww5 ww6 ww7 ->
+                 Lib.Line @ a ww5 ww6 ww7 } }) -}
+e5e824145b90a2359053f7c43ed52c1e
+  changeCent :: a -> Lib.Grid a -> Lib.Grid a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,1*U><S(SS(SLS)S),1*U(U,U(U,A,U),U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (x2 :: a) (ds2 :: Lib.Grid a) ->
+                 case x2 of x3 { DEFAULT ->
+                 case ds2 of wild { Lib.Grid u c d ->
+                 case c of wild1 { Lib.Line l ds3 r ->
+                 Lib.Grid @ a u (Lib.Line @ a l x3 r) d } } }) -}
+5b8908a5c341068bddd542b0f0fcf5b3
+  changeMid :: a -> Lib.Line a -> Lib.Line a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S(SLS),1*U(U,A,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (i :: a) (ds2 :: Lib.Line a) ->
+                 case i of i1 { DEFAULT ->
+                 case ds2 of wild { Lib.Line l ds3 r -> Lib.Line @ a l i1 r } }) -}
+c15aa6d25f395ad6ed6db793e04e6a65
+  conwayUpdate :: Lib.Grid Lib.Cell -> Lib.Cell
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SS(LSL)S),1*U(U,U(U,U,U),U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Lib.Grid Lib.Cell) ->
+                 case w of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 Lib.$wconwayUpdate ww1 ww5 ww6 ww7 ww3 } }) -}
+827850c67242685b7e2f0d7db5c4c5af
+  counts :: GHC.Classes.Eq a => a -> [a] -> GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(1*C1(U),A)><L,U>,
+     Unfolding: (\ @ a ($dEq :: GHC.Classes.Eq a) (eta :: a) ->
+                 let {
+                   g :: a -> GHC.Types.Bool = GHC.Classes.== @ a $dEq eta
+                 } in
+                 letrec {
+                   $wgo1 :: [a] -> GHC.Prim.Int# -> GHC.Prim.Int#
+                     {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [0] -}
+                   = \ (w :: [a]) (ww :: GHC.Prim.Int#) ->
+                     case w of wild {
+                       [] -> ww
+                       : y ys
+                       -> case g y of wild1 {
+                            GHC.Types.False -> $wgo1 ys ww
+                            GHC.Types.True -> $wgo1 ys (GHC.Prim.+# ww 1#) } }
+                 } in
+                 \ (x2 :: [a]) ->
+                 case $wgo1 x2 0# of ww { DEFAULT -> GHC.Types.I# ww }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  gridConfigurations :: Lib.Grid a -> Lib.Grid (Lib.Grid a)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SS(SLS)S),1*U(U,U(U,U,U),U)>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: Lib.Grid a) ->
+                 case w of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 case Lib.$wgridConfigurations
+                        @ a
+                        ww1
+                        ww5
+                        ww6
+                        ww7
+                        ww3 of ww8 { (#,,#) ww9 ww10 ww11 ->
+                 Lib.Grid @ (Lib.Grid a) ww9 ww10 ww11 } } }) -}
+bd6984703b765d04eeae2309cfa8896f
+  height :: Lib.Grid a -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLS),1*U(U,A,U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: Lib.Grid a) ->
+                 case w of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case GHC.List.$wlenAcc @ (Lib.Line a) ww1 0# of ww4 { DEFAULT ->
+                 case GHC.List.$wlenAcc @ (Lib.Line a) ww3 0# of ww5 { DEFAULT ->
+                 GHC.Types.I# (GHC.Prim.+# (GHC.Prim.+# ww4 ww5) 1#) } } }) -}
+d480610f341be24487b388046c42142d
+  horizNeighb :: Lib.Grid a -> [a]
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LS(SLS)L),1*U(A,U(U,A,U),A)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: Lib.Grid a) ->
+                 case w of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 case ww5 of wild {
+                   []
+                   -> case ww7 of wild1 {
+                        [] -> GHC.Types.[] @ a
+                        : b ds2 -> GHC.Types.: @ a b (GHC.Types.[] @ a) }
+                   : a1 ds2
+                   -> case ww7 of wild1 {
+                        [] -> GHC.Types.: @ a a1 (GHC.Types.[] @ a)
+                        : b ds3
+                        -> GHC.Types.:
+                             @ a
+                             a1
+                             (GHC.Types.: @ a b (GHC.Types.[] @ a)) } } } }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  horizontalConfigurations :: Lib.Grid a -> Lib.Line (Lib.Grid a)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SS(SLS)S),1*U(U,U(U,U,U),U)>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: Lib.Grid a) ->
+                 case w of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 case Lib.$whorizontalConfigurations
+                        @ a
+                        ww1
+                        ww5
+                        ww6
+                        ww7
+                        ww3 of ww8 { (#,,#) ww9 ww10 ww11 ->
+                 Lib.Line @ (Lib.Grid a) ww9 ww10 ww11 } } }) -}
+d3655c37f8941bddbb9ed7714043b64d
+  limap :: (Lib.Line a -> Lib.Line a) -> Lib.Grid a -> Lib.Grid a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S(SSS),1*U(U,U,U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: Lib.Line a -> Lib.Line a) (w1 :: Lib.Grid a) ->
+                 case w1 of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case GHC.Base.map
+                        @ (Lib.Line a)
+                        @ (Lib.Line a)
+                        w
+                        ww1 of dt { DEFAULT ->
+                 case w ww2 of dt1 { Lib.Line ipv ipv1 ipv2 ->
+                 case GHC.Base.map
+                        @ (Lib.Line a)
+                        @ (Lib.Line a)
+                        w
+                        ww3 of dt2 { DEFAULT ->
+                 Lib.Grid @ a dt dt1 dt2 } } } }) -}
+33ccdca73ccb9a6c0465bffd4c557829
+  lowerNeighb :: Lib.Grid a -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: Lib.Grid a) ->
+                 case w of ww { Lib.Grid ww1 ww2 ww3 ->
+                 Lib.$wlowerNeighb @ a ww3 }) -}
+c2a43c9deee8bfbe6a95136d55c909eb
+  mooresNeighb :: Lib.Grid a -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SSS),1*U(U,U(U,A,U),U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: Lib.Grid a) ->
+                 case w of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 let {
+                   karg :: [a]
+                   = let {
+                       karg1 :: [a]
+                       = case ww5 of wild {
+                           []
+                           -> case ww7 of wild1 {
+                                [] -> GHC.Types.[] @ a
+                                : b ds2 -> GHC.Types.: @ a b (GHC.Types.[] @ a) }
+                           : a1 ds2
+                           -> case ww7 of wild1 {
+                                [] -> GHC.Types.: @ a a1 (GHC.Types.[] @ a)
+                                : b ds3
+                                -> GHC.Types.: @ a a1 (GHC.Types.: @ a b (GHC.Types.[] @ a)) } }
+                     } in
+                     case ww3 of wild {
+                       [] -> GHC.Base.++ @ a (GHC.Types.[] @ a) karg1
+                       : u ds2
+                       -> case u of wild1 { Lib.Line ds3 x2 ds4 ->
+                          case ds3 of wild2 {
+                            []
+                            -> case ds4 of wild3 {
+                                 [] -> GHC.Base.++ @ a (GHC.Types.: @ a x2 (GHC.Types.[] @ a)) karg1
+                                 : r ds5
+                                 -> GHC.Base.++
+                                      @ a
+                                      (GHC.Types.: @ a x2 (GHC.Types.: @ a r (GHC.Types.[] @ a)))
+                                      karg1 }
+                            : l ds5
+                            -> case ds4 of wild3 {
+                                 []
+                                 -> GHC.Base.++
+                                      @ a
+                                      (GHC.Types.: @ a l (GHC.Types.: @ a x2 (GHC.Types.[] @ a)))
+                                      karg1
+                                 : r ds6
+                                 -> GHC.Base.++
+                                      @ a
+                                      (GHC.Types.:
+                                         @ a
+                                         l
+                                         (GHC.Types.:
+                                            @ a
+                                            x2
+                                            (GHC.Types.: @ a r (GHC.Types.[] @ a))))
+                                      karg1 } } } }
+                 } in
+                 case ww1 of wild {
+                   [] -> GHC.Base.++ @ a (GHC.Types.[] @ a) karg
+                   : u ds2
+                   -> case u of wild1 { Lib.Line ds3 x2 ds4 ->
+                      case ds3 of wild2 {
+                        []
+                        -> case ds4 of wild3 {
+                             [] -> GHC.Base.++ @ a (GHC.Types.: @ a x2 (GHC.Types.[] @ a)) karg
+                             : r ds5
+                             -> GHC.Base.++
+                                  @ a
+                                  (GHC.Types.: @ a x2 (GHC.Types.: @ a r (GHC.Types.[] @ a)))
+                                  karg }
+                        : l ds5
+                        -> case ds4 of wild3 {
+                             []
+                             -> GHC.Base.++
+                                  @ a
+                                  (GHC.Types.: @ a l (GHC.Types.: @ a x2 (GHC.Types.[] @ a)))
+                                  karg
+                             : r ds6
+                             -> GHC.Base.++
+                                  @ a
+                                  (GHC.Types.:
+                                     @ a
+                                     l
+                                     (GHC.Types.: @ a x2 (GHC.Types.: @ a r (GHC.Types.[] @ a))))
+                                  karg } } } } } }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  moveDownGrid :: Lib.Grid a -> Lib.Grid a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SSS),1*U(U,U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds2 :: Lib.Grid a) ->
+                 case ds2 of wild { Lib.Grid up x2 ds3 ->
+                 case ds3 of wild1 {
+                   [] -> wild
+                   : y down
+                   -> case y of dt { Lib.Line ipv ipv1 ipv2 ->
+                      case down of dt1 { DEFAULT ->
+                      Lib.Grid @ a (GHC.Types.: @ (Lib.Line a) x2 up) dt dt1 } } } }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  moveLeftGrid :: Lib.Grid a -> Lib.Grid a
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SS(SSS)S),1*U(U,U(U,U,U),U)>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: Lib.Grid a) ->
+                 case w of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 case GHC.Base.map
+                        @ (Lib.Line a)
+                        @ (Lib.Line a)
+                        (Lib.moveLeftLine @ a)
+                        ww1 of dt { DEFAULT ->
+                 case case ww5 of wild {
+                        [] -> Lib.Line @ a (GHC.Types.[] @ a) ww6 ww7
+                        : l left
+                        -> Lib.Line
+                             @ a
+                             left
+                             l
+                             (GHC.Types.: @ a ww6 ww7) } of dt1 { Lib.Line ipv ipv1 ipv2 ->
+                 case GHC.Base.map
+                        @ (Lib.Line a)
+                        @ (Lib.Line a)
+                        (Lib.moveLeftLine @ a)
+                        ww3 of dt2 { DEFAULT ->
+                 Lib.Grid @ a dt dt1 dt2 } } } } }) -}
+54a5d6240fe603f83c4836b051b471b0
+  moveLeftLine :: Lib.Line a -> Lib.Line a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SSS),1*U(U,U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds2 :: Lib.Line a) ->
+                 case ds2 of wild { Lib.Line ds3 x2 right ->
+                 case ds3 of wild1 {
+                   [] -> wild
+                   : l left
+                   -> case left of dt { DEFAULT ->
+                      case l of dt1 { DEFAULT ->
+                      Lib.Line @ a dt dt1 (GHC.Types.: @ a x2 right) } } } }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  moveRightGrid :: Lib.Grid a -> Lib.Grid a
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SS(SSS)S),1*U(U,U(U,U,U),U)>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: Lib.Grid a) ->
+                 case w of ww { Lib.Grid ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                 case GHC.Base.map
+                        @ (Lib.Line a)
+                        @ (Lib.Line a)
+                        (Lib.moveRightLine @ a)
+                        ww1 of dt { DEFAULT ->
+                 case case ww7 of wild {
+                        [] -> Lib.Line @ a ww5 ww6 (GHC.Types.[] @ a)
+                        : r right
+                        -> Lib.Line
+                             @ a
+                             (GHC.Types.: @ a ww6 ww5)
+                             r
+                             right } of dt1 { Lib.Line ipv ipv1 ipv2 ->
+                 case GHC.Base.map
+                        @ (Lib.Line a)
+                        @ (Lib.Line a)
+                        (Lib.moveRightLine @ a)
+                        ww3 of dt2 { DEFAULT ->
+                 Lib.Grid @ a dt dt1 dt2 } } } } }) -}
+767537d494f39cb00123966a5a283db1
+  moveRightLine :: Lib.Line a -> Lib.Line a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SSS),1*U(U,U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds2 :: Lib.Line a) ->
+                 case ds2 of wild { Lib.Line left x2 ds3 ->
+                 case ds3 of wild1 {
+                   [] -> wild
+                   : r right
+                   -> case r of dt { DEFAULT ->
+                      case right of dt1 { DEFAULT ->
+                      Lib.Line @ a (GHC.Types.: @ a x2 left) dt dt1 } } } }) -}
+0617a376aa7ae92da7f628e208b0acf1
+  moveUpGrid :: Lib.Grid a -> Lib.Grid a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SSS),1*U(U,U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds2 :: Lib.Grid a) ->
+                 case ds2 of wild { Lib.Grid ds3 x2 down ->
+                 case ds3 of wild1 {
+                   [] -> wild
+                   : y up
+                   -> case up of dt { DEFAULT ->
+                      case y of dt1 { Lib.Line ipv ipv1 ipv2 ->
+                      Lib.Grid
+                        @ a
+                        dt
+                        dt1
+                        (GHC.Types.: @ (Lib.Line a) x2 down) } } } }) -}
+e8494fd1ac712d0e742275d75900a9e6
+  sampleGrid :: Lib.Grid Lib.Cell
+  {- Unfolding: (case Lib.$wxs3 37# of ww { (#,#) ww1 ww2 ->
+                 case Lib.sampleLine of dt { Lib.Line ipv ipv1 ipv2 ->
+                 case Lib.$wxs 37# of dt1 { DEFAULT ->
+                 Lib.Grid
+                   @ Lib.Cell
+                   (GHC.Types.: @ (Lib.Line Lib.Cell) ww1 ww2)
+                   (Lib.Line @ Lib.Cell ipv Lib.Dead ipv2)
+                   dt1 } } }) -}
+3609e694e589cc677fb54547ab33d565
+  sampleLine :: Lib.Line Lib.Cell
+  {- Unfolding: (case Lib.$wxs2 34# of dt { DEFAULT ->
+                 case Lib.$wxs1 34# of dt1 { DEFAULT ->
+                 Lib.Line @ Lib.Cell dt Lib.Dead dt1 } }) -}
+4727a9c1b6dc763960c62f6ccbca0947
+  simulationGOF :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.simulationGOF1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+eb60e736fb044de12d3fa35d4ab7c571
+  simulationGOF1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 case Graphics.Gloss.Internals.Interface.Simulate.simulateWithBackendIO1
+                        @ (Lib.Grid Lib.Cell)
+                        @ Graphics.Gloss.Internals.Interface.Backend.GLUT.GLUTState
+                        Graphics.Gloss.Internals.Interface.Backend.GLUT.$fBackendGLUTState
+                        Graphics.Gloss.Internals.Interface.Backend.GLUT.$fBackendGLUTState_$cinitBackendState
+                        Lib.simulationGOF5
+                        Graphics.Gloss.Data.Color.white
+                        Lib.simulationGOF4
+                        Lib.sampleGrid
+                        Lib.simulationGOF3
+                          `cast`
+                        (<Lib.Grid Lib.Cell>_R
+                         ->_R Sym (GHC.Types.N:IO[0]
+                                       <Graphics.Gloss.Internals.Data.Picture.Picture>_R))
+                        Lib.simulationGOF2
+                          `cast`
+                        (<Graphics.Gloss.Data.ViewPort.ViewPort>_R
+                         ->_R <GHC.Types.Float>_R
+                         ->_R <Lib.Grid Lib.Cell>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Lib.Grid Lib.Cell>_R))
+                        eta of ds2 { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Tuple.() #) }) -}
+6898ed90e75bb64edfc0964f711a1d60
+  simulationGOF10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Conway"#) -}
+5cc6c9b6b15d37b2f569db789682ce34
+  simulationGOF2 ::
+    Graphics.Gloss.Data.ViewPort.ViewPort
+    -> GHC.Types.Float
+    -> Lib.Grid Lib.Cell
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Lib.Grid Lib.Cell #)
+  {- Arity: 4, HasNoCafRefs,
+     Unfolding: (\ (view :: Graphics.Gloss.Data.ViewPort.ViewPort)
+                   (time :: GHC.Types.Float)[OneShot]
+                   (model1 :: Lib.Grid Lib.Cell)[OneShot]
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# s,
+                    case view of ds2 { Graphics.Gloss.Data.ViewPort.ViewPort ipv ipv1 ipv2 ->
+                    case time of ds3 { GHC.Types.F# ipv3 ->
+                    case model1 of ww { Lib.Grid ww1 ww2 ww3 ->
+                    case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                    case Lib.$wgridConfigurations
+                           @ Lib.Cell
+                           ww1
+                           ww5
+                           ww6
+                           ww7
+                           ww3 of ww8 { (#,,#) ww9 ww10 ww11 ->
+                    case ww10 of ww12 { Lib.Line ww13 ww14 ww15 ->
+                    case Lib.$w$cfmap
+                           @ (Lib.Grid Lib.Cell)
+                           @ Lib.Cell
+                           Lib.conwayUpdate
+                           ww9
+                           ww13
+                           ww14
+                           ww15
+                           ww11 of ww16 { (#,,#) ww17 ww18 ww19 ->
+                    Lib.Grid @ Lib.Cell ww17 ww18 ww19 } } } } } } } #)) -}
+eb56d4488859c4154930af477f1ef55a
+  simulationGOF3 ::
+    Lib.Grid Lib.Cell
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Graphics.Gloss.Internals.Data.Picture.Picture #)
+  {- Arity: 2,
+     Unfolding: (\ (x2 :: Lib.Grid Lib.Cell)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# s,
+                    case x2 of ww { Lib.Grid ww1 ww2 ww3 ->
+                    case ww2 of ww4 { Lib.Line ww5 ww6 ww7 ->
+                    case Lib.$wds
+                           @ Lib.Cell
+                           Lib.$fDrawableCell_$cdraw
+                             `cast`
+                           (Sym (Lib.N:Drawable[0] <Lib.Cell>_N))
+                           ww1
+                           ww5
+                           ww6
+                           ww7
+                           ww3 of ww8 { Unit# ww9 ->
+                    Graphics.Gloss.Internals.Data.Picture.Pictures ww9 } } } #)) -}
+e7e398636a0683974b212046a9b3c7d5
+  simulationGOF4 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 3#) -}
+c24dc109ffc6916221f2ed96999412d1
+  simulationGOF5 :: Graphics.Gloss.Data.Display.Display
+  {- Unfolding: (Graphics.Gloss.Data.Display.InWindow
+                   Lib.simulationGOF10
+                   Lib.simulationGOF7
+                   Lib.simulationGOF6) -}
+47a31acef93fc4cd0cfdba37819f4c24
+  simulationGOF6 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((Lib.$fFoldableGrid11, Lib.$fFoldableGrid11)) -}
+a254a8269d3d6e427920fa8ee1aa084c
+  simulationGOF7 :: (GHC.Types.Int, GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((Lib.simulationGOF9, Lib.simulationGOF8)) -}
+39763162e1f758a61b71190df78dd106
+  simulationGOF8 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 768#) -}
+4810b8d766003fe70dc1ecd962c3043f
+  simulationGOF9 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1366#) -}
+00c22fcd8fe9118b40b3f5371a1d5fab
+  someFunc :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.someFunc1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+ad6a9625975a1a79cc821c5af4569cd9
+  someFunc1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Lib.someFunc2
+                   GHC.Types.True
+                   eta) -}
+2c8e587a0b56019abf877c287f94cfeb
+  someFunc2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "someFunc"#) -}
+fb80fbcb60bd18ace6492d1b56892635
+  upperNeighb :: Lib.Grid a -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(U,A,A)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: Lib.Grid a) ->
+                 case w of ww { Lib.Grid ww1 ww2 ww3 ->
+                 Lib.$wupperNeighb @ a ww1 }) -}
+6965659298f5e8e853c5069043b6584b
+  width :: Lib.Grid a -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LS(SSS)L),1*U(A,U(U,U,U),A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds2 :: Lib.Grid a) ->
+                 case ds2 of wild { Lib.Grid ds3 x2 ds4 ->
+                 Lib.$fFoldableLine8 @ a x2 }) -}
+instance Control.Comonad.Comonad [Lib.Grid] = Lib.$fComonadGrid
+instance Lib.Drawable [Lib.Cell] = Lib.$fDrawableCell
+instance Lib.Drawable [Lib.Grid] = Lib.$fDrawableGrid
+instance Lib.Drawable [Lib.Line] = Lib.$fDrawableLine
+instance GHC.Classes.Eq [Lib.Cell] = Lib.$fEqCell
+instance Data.Foldable.Foldable [Lib.Grid] = Lib.$fFoldableGrid
+instance Data.Foldable.Foldable [Lib.Line] = Lib.$fFoldableLine
+instance GHC.Base.Functor [Lib.Grid] = Lib.$fFunctorGrid
+instance GHC.Base.Functor [Lib.Line] = Lib.$fFunctorLine
+instance GHC.Show.Show [Lib.Cell] = Lib.$fShowCell
+instance GHC.Show.Show [Lib.Grid] = Lib.$fShowGrid
+instance GHC.Show.Show [Lib.Line] = Lib.$fShowLine
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
