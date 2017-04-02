@@ -2,6 +2,7 @@
 {-# LANGUAGE Strict #-}
 module Lib where
 
+import Prelude hiding (Either(..))
 import Data.Function (fix)
 import Data.List (foldl')
 import Control.Lens
@@ -188,3 +189,27 @@ instance Drawable Nucleobase where
             U -> red
             G -> green
             C -> yellow
+
+instance Drawable Nucleotide where
+  draw n = pictures (b:p3)
+    where b = draw . _base $ n
+          p3= case _bond3 n of
+            Nothing   -> []
+            Just Up   -> [line [(0,0), ( 0, 5)]]
+            Just Down -> [line [(0,0), ( 0,-5)]]
+            Just Left -> [line [(0,0), (-5, 0)]]
+            Just Right-> [line [(0,0), ( 5, 0)]]
+
+instance Drawable a => Drawable (Maybe a) where
+  draw Nothing = pictures []
+  draw (Just n)  = draw n
+
+sampleNLine = Line (replicate 10 Nothing) Nothing [Just $ Nucleotide G (Just Right) Nothing Nothing, bound A, bound C, bound A, bound U, bound C, bound G, Just $ Nucleotide G Nothing (Just Left) Nothing]
+  where bound a = Just $ Nucleotide a (Just Right) (Just Left) Nothing
+
+emptyNLine = Line (replicate 10 Nothing) Nothing (replicate 8 Nothing)
+
+sampleNGrid = Grid (sampleNLine:replicate 10 emptyNLine) sampleNLine (sampleNLine:replicate 7 emptyNLine)
+
+simulationN :: IO ()
+simulationN = simulate (InWindow "Conway" (1366, 768) (0,0)) white 3 sampleNGrid draw (\_ _ m -> m)

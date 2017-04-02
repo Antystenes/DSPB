@@ -7,5 +7,5 @@ import Control.Comonad
 import System.Console.ANSI
 
 main :: IO ()
-main = simulationGOF
+main = simulationN
   --foldM_ (\ac f -> let n = ac =>> f in clearScreen >> print n >> threadDelay 1000000 >> return n) sampleGrid $ (extract : repeat conwayUpdate)

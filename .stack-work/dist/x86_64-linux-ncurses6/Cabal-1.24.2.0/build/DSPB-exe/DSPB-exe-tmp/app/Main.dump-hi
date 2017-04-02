@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-04-01 23:26:54.549140833 UTC
+2017-04-02 00:14:17.12669207 UTC
 
 interface main@main:Main 8002
-  interface hash: f41e0905dcb45c2e22334da8790d3392
-  ABI hash: 2b743fa250cc633cc32e064b0860a123
+  interface hash: 8e0580becb8617e613e0fad9d97f27bd
+  ABI hash: a3ff00064ceadae2c2e580cc3b254cb8
   export-list hash: 2c4a3ee7b88d2ce68484b4116e5790fc
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 1ef8af60fb69e17b97823a28ad363597
@@ -121,7 +121,7 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-7bX590WM0JqI4H9GMcNEBq:
                          vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Storable
                          vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
                          vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed.Base
-import  -/  DSPB-0.1.0.0@DSPB-0.1.0.0-IzuWE0A9uXqKGPPquzCxk7:Lib 0d907e4647303f99d561393fa032aa95
+import  -/  DSPB-0.1.0.0@DSPB-0.1.0.0-IzuWE0A9uXqKGPPquzCxk7:Lib 419266fbf049167eb54cfdbb6a3a2d7a
 import  -/  ansi-terminal-0.6.2.3@ansi-terminal-0.6.2.3-4HPxin1iv6RAndS8lH3nzo:System.Console.ANSI e739319fbbd4966bdcd546dfbbe469b3
 import  -/  base-4.9.1.0:Control.Concurrent 2ee6a0a58489520b9a96d8fef10380fa
 import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
@@ -140,19 +140,19 @@ d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-462aba19696bdedb783e26874281b9cf
+ee0d9b8acfa70929665658fc4c6e3ab8
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
-                Lib.simulationGOF1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-95530aefe0a2b70e95afd31c09691e0f
+                Lib.simulationN1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+4060fabcb41023c562bba535de4c6e10
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1,
      Unfolding: (GHC.TopHandler.runMainIO1
                    @ ()
-                   Lib.simulationGOF1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+                   Lib.simulationN1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
