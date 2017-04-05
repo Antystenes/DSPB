@@ -20,6 +20,7 @@ library
                      , lens
                      , comonad
                      , gloss
+                     , random
   default-language:    Haskell2010
 
 executable DSPB-exe

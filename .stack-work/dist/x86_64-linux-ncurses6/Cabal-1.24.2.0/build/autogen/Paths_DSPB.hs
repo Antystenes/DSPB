@@ -30,7 +30,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/Programming/Haskell/DSPB/.stack-work/install/x86_64-linux-ncurses6/lts-8.6/8.0.2/bin"
-libdir     = "/home/Programming/Haskell/DSPB/.stack-work/install/x86_64-linux-ncurses6/lts-8.6/8.0.2/lib/x86_64-linux-ghc-8.0.2/DSPB-0.1.0.0-IzuWE0A9uXqKGPPquzCxk7"
+libdir     = "/home/Programming/Haskell/DSPB/.stack-work/install/x86_64-linux-ncurses6/lts-8.6/8.0.2/lib/x86_64-linux-ghc-8.0.2/DSPB-0.1.0.0-8DbiYz7G17CFksfrEx0ZXk"
 dynlibdir  = "/home/Programming/Haskell/DSPB/.stack-work/install/x86_64-linux-ncurses6/lts-8.6/8.0.2/lib/x86_64-linux-ghc-8.0.2"
 datadir    = "/home/Programming/Haskell/DSPB/.stack-work/install/x86_64-linux-ncurses6/lts-8.6/8.0.2/share/x86_64-linux-ghc-8.0.2/DSPB-0.1.0.0"
 libexecdir = "/home/Programming/Haskell/DSPB/.stack-work/install/x86_64-linux-ncurses6/lts-8.6/8.0.2/libexec"

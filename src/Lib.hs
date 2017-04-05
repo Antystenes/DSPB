@@ -1,5 +1,7 @@
 {-# LANGUAGE TypeSynonymInstances #-}
-{-# LANGUAGE Strict #-}
+{-# LANGUAGE MultiParamTypeClasses#-}
+{-# LANGUAGE FlexibleInstances #-}
+--{-# LANGUAGE Strict #-}
 module Lib where
 
 import Prelude hiding (Either(..))
@@ -8,13 +10,21 @@ import Data.List (foldl')
 import Control.Lens
 import Control.Comonad
 import Graphics.Gloss hiding (Line)
+import Graphics.Gloss.Interface.IO.Simulate (simulateIO)
+import Control.Arrow
+import Control.Monad (join)
+import Data.Maybe (catMaybes, mapMaybe, isNothing)
+import Debug.Trace (trace)
+import Data.List (nub,sort)
+import Data.Traversable
+import System.Random (randomIO)
 
 someFunc :: IO ()
 someFunc = putStrLn "someFunc"
 
 data Line a = Line { _left   :: [a]
                    , _center ::  a
-                   , _right  :: [a]}
+                   , _right  :: [a]} deriving Eq
 
 instance Functor Line where
   fmap f (Line left x right) = Line (f <$> left) (f x) (f <$> right)
@@ -22,18 +32,24 @@ instance Functor Line where
 instance Foldable Line where
   foldr f acc (Line left x right) = foldl' (flip f) (f x $ foldr f acc right) left
 
+instance Traversable Line where
+  traverse f (Line up x down) = Line <$> traverse f up <*> f x <*> traverse f down
+
 instance Show a => Show (Line a) where
   show = concatMap ((++" ").show)
 
 data Grid a = Grid { _up    :: [Line a]
                    , _mid   ::  Line a
-                   , _down  :: [Line a]}
+                   , _down  :: [Line a]} deriving Eq
 
 instance Functor Grid where
   fmap f (Grid a b c) = Grid ((fmap . fmap) f a) (fmap f b) ((fmap . fmap) f c)
 
 instance Foldable Grid where
   foldr f acc (Grid up x down) = foldl' (foldr f) (foldr f (foldr (flip . foldr $ f) acc down) x) up
+
+instance Traversable Grid where
+  traverse f (Grid up x down) = Grid <$> (traverse . traverse) f up <*> traverse f x <*> (traverse . traverse) f down
 
 instance Show a => Show (Grid a) where
   show (Grid up x down) = upSh ++ show x ++ "\n" ++ doSh
@@ -49,7 +65,7 @@ instance Show Cell where
 
 sampleLine = Line (concat . replicate 34 $ [Alive,Dead]) Dead (concat . replicate 34 $ [Alive,Dead])
 
-sampleGrid = changeCent Dead $ Grid (replicate 37 sampleLine) sampleLine (replicate 37 sampleLine)
+sampleGrid = changeCent Dead $ Grid (replicate 38 sampleLine) sampleLine (replicate 38 sampleLine)
 
 changeMid i (Line l _ r) = Line l i r
 
@@ -109,6 +125,7 @@ instance Comonad Grid where
   extract (Grid _ (Line _ x _) _) = x
   duplicate                       = gridConfigurations
 
+-- (>>=) :: Grid a -> (Grid a -> a) -> Grid a
 
 upperNeighb :: Grid a -> [a]
 upperNeighb (Grid [] _ _) = []
@@ -135,6 +152,9 @@ horizNeighb (Grid _ l _) = case l of
 
 counts :: Eq a => a -> [a] -> Int
 counts = (length.).filter.(==)
+
+countAll :: Eq a => [a] -> [(a,Int)]
+countAll = (>>=flip(,)).flip ((length.).filter.(==)) >>= map
 
 mooresNeighb :: Grid a -> [a]
 mooresNeighb g = upperNeighb g ++ lowerNeighb g ++ horizNeighb g
@@ -173,14 +193,14 @@ instance Drawable a => Drawable (Grid a) where
 simulationGOF :: IO ()
 simulationGOF = simulate (InWindow "Conway" (1366, 768) (0,0)) white 3 sampleGrid draw (\_ _ m -> m =>> conwayUpdate)
 
-data Nucleobase = A | U | G | C
+data Nucleobase = A | U | G | C deriving (Eq,Show)
 
-data Direction = Up | Down | Left | Right
+data Direction = Up | Down | Left | Right deriving (Eq, Show)
 
 data Nucleotide = Nucleotide { _base  :: Nucleobase,
                                _bond3 :: Maybe Direction,
                                _bond5 :: Maybe Direction,
-                               _hbond :: Maybe Direction}
+                               _hbond :: Maybe Direction} deriving (Eq,Show)
 
 instance Drawable Nucleobase where
   draw g = Color c $ circleSolid 4
@@ -191,7 +211,7 @@ instance Drawable Nucleobase where
             C -> yellow
 
 instance Drawable Nucleotide where
-  draw n = pictures (b:p3)
+  draw n = pictures (b:p5)
     where b = draw . _base $ n
           p3= case _bond3 n of
             Nothing   -> []
@@ -199,17 +219,200 @@ instance Drawable Nucleotide where
             Just Down -> [line [(0,0), ( 0,-5)]]
             Just Left -> [line [(0,0), (-5, 0)]]
             Just Right-> [line [(0,0), ( 5, 0)]]
+          p5= case _bond5 n of
+            Nothing   -> p3
+            Just Up   -> Color violet (line [(0,0), ( 0, 5)]) : p3
+            Just Down -> Color violet (line [(0,0), ( 0,-5)]) : p3
+            Just Left -> Color violet (line [(0,0), (-5, 0)]) : p3
+            Just Right-> Color violet (line [(0,0), ( 5, 0)]) : p3
 
 instance Drawable a => Drawable (Maybe a) where
   draw Nothing = pictures []
   draw (Just n)  = draw n
 
-sampleNLine = Line (replicate 10 Nothing) Nothing [Just $ Nucleotide G (Just Right) Nothing Nothing, bound A, bound C, bound A, bound U, bound C, bound G, Just $ Nucleotide G Nothing (Just Left) Nothing]
-  where bound a = Just $ Nucleotide a (Just Right) (Just Left) Nothing
+checkColl :: Grid (Maybe a) -> [Maybe Direction]
+checkColl (Grid up (Line left _ right) down) = [u,d,l,r]
+  where
+    u = case up of
+      []           -> Just Up
+      Line _ (Just x) _:_ -> Just Up
+      Line _ Nothing  _:_ -> Nothing
+    d = case down of
+      []           -> Just Down
+      Line _ (Just _) _:_ -> Just Down
+      Line _ Nothing  _:_ -> Nothing
+    l = case left of
+      []           -> Just Left
+      Just _  :_ -> Just Left
+      Nothing :_ -> Nothing
+    r = case right of
+      []           -> Just Right
+      Just _ :_    -> Just Right
+      Nothing:_    -> Nothing
 
-emptyNLine = Line (replicate 10 Nothing) Nothing (replicate 8 Nothing)
+sampleNLine = Line (replicate 10 Nothing) Nothing ([Just $ Nucleotide G Nothing (Just Right) Nothing, bound A, bound C, bound A, bound U, bound C, bound G, Just $ Nucleotide G (Just Left) Nothing Nothing, Nothing]++replicate 13 Nothing)
+--sampleNLine = Line [Nothing] Nothing ([Just $ Nucleotide G Nothing (Just Right) Nothing, bound A, bound C, bound A, bound U, bound C, bound G, Just $ Nucleotide G (Just Left) Nothing Nothing, Nothing])
+      where bound a = Just $ Nucleotide a (Just Left) (Just Right) Nothing
 
-sampleNGrid = Grid (sampleNLine:replicate 10 emptyNLine) sampleNLine (sampleNLine:replicate 7 emptyNLine)
+emptyNLine = Line (replicate 10 Nothing) Nothing (replicate 22 Nothing)
+
+--sampleNGrid = Grid [] (Line [] (Just $ Nucleotide G (Just Right) Nothing Nothing) [Just $ Nucleotide C (Just Right) (Just Left) Nothing, Just $ Nucleotide C Nothing (Just Left) Nothing]) []
+
+sampleNGrid = Grid (sampleNLine:replicate 20 emptyNLine) sampleNLine (sampleNLine:replicate 20 emptyNLine)
+
+sampleNGrid2 = Grid (replicate 20 emptyNLine) emptyNLine (sampleNLine : replicate 20 emptyNLine)
 
 simulationN :: IO ()
-simulationN = simulate (InWindow "Conway" (1366, 768) (0,0)) white 3 sampleNGrid draw (\_ _ m -> m)
+simulationN = simulate (InWindow "RNA" (1366, 768) (0,0)) white 3 sampleNGrid2 draw (\_ _ m -> m)
+
+moveGrid :: Direction -> Grid a -> Grid a
+moveGrid Left  = moveLeftGrid
+moveGrid Right = moveRightGrid
+moveGrid Up    = moveUpGrid
+moveGrid Down  = moveDownGrid
+
+mToList :: Maybe a -> (a -> [b]) -> [b]
+mToList Nothing  _ = []
+mToList (Just a) f = f a
+
+class M2M m1 m2 where
+  (>>=>=) :: m1 a -> (a -> m2 a) -> m2 a
+
+instance M2M Maybe [] where
+  (>>=>=) = mToList
+
+listPart :: (a -> Maybe Direction) -> (a -> Maybe Direction) -> Grid (Maybe a) -> [Grid (Maybe a)]
+listPart f z g = case extract g of
+  Nothing -> []
+  Just n  -> let  b5 = case f n of
+                    Nothing -> []
+                    Just d  -> listPartMolD f (moveGrid d g)
+                  b3 = case z n of
+                    Nothing -> []
+                    Just d  -> listPartMolD z . moveGrid d $ g
+    in g: b3 ++ b5
+
+listPartMolD :: (a -> Maybe Direction) -> Grid (Maybe a) -> [Grid (Maybe a)]
+listPartMolD f g = case extract g of
+  Nothing -> []
+  Just n  ->
+    let ng = case f n of
+          Nothing -> []
+          Just d  -> listPartMolD f (moveGrid d g)
+    in g : ng
+
+listPartMol = listPart _bond5 _bond3
+
+listPartTup = listPart (_bond5 . fst) (_bond3 . fst)
+
+biggersnd :: Ord b => (a,b) -> (a,b) -> (a,b)
+biggersnd n@(_,x) m@(_,y) = if x > y then n else m
+
+nucNeighbN :: (Nucleotide -> Maybe Direction) -> Grid (Maybe (Nucleotide,Direction)) -> [Direction]
+nucNeighbN f g = case extract g of
+   Nothing -> []
+   Just (n,_)  -> (catMaybes . filter ((/= _bond5 n)&&&(/= _bond3 n) >>> uncurry (&&)) . checkColl $ g) ++ case f n of
+     Nothing -> []
+     Just d  -> nucNeighbN f . moveGrid d $ g
+
+nucNeighb :: Grid (Maybe (Nucleotide,Direction)) -> [Direction]
+nucNeighb g = case extract g of
+  Nothing -> []
+  Just (n,_)  -> let  b5 = case _bond5 n of
+                        Nothing -> []
+                        Just d  -> nucNeighbN _bond5 . moveGrid d $ g
+                      b3 = case _bond3 n of
+                        Nothing -> []
+                        Just d  -> nucNeighbN _bond3 . moveGrid d $ g
+                 in nub $ (catMaybes . filter ((/= _bond5 n)&&&(/= _bond3 n) >>> uncurry (&&)) . checkColl $ g) ++ b3 ++ b5
+
+fl2dir :: Float -> Direction
+fl2dir n
+  | n < 0.25 = Left
+  | n < 0.5  = Right
+  | n < 0.75 = Up
+  | n < 1    = Down
+  | otherwise= Left
+
+diffusion :: Grid (Maybe Nucleotide) -> IO (Grid (Maybe (Nucleotide, Direction)))
+diffusion = mapM (\g -> ((,) <$> g <*>) . pure . fl2dir <$> randomIO )
+
+molDir :: Grid (Maybe (Nucleotide, Direction)) -> Maybe (Direction, Int)
+molDir = ((foldr (biggersndM.Just) Nothing.). filter .(not.). flip (elem.fst). nucNeighb) <*> (sort . countAll . mapMaybe ((snd <$>).extract) . listPartTup)
+
+--foldr (biggersndM.Just) Nothing. filter.(not.).flip (elem.fst).nucNeighb <*>
+
+biggersndM :: Ord b => Maybe (a,b) -> Maybe (a,b) -> Maybe (a,b)
+biggersndM Nothing Nothing = Nothing
+biggersndM x Nothing = x
+biggersndM Nothing y = y
+biggersndM x y = biggersnd <$> x <*> y
+
+dirs :: [Direction]
+dirs = [Up,Down,Left,Right]
+
+neuNeigh :: Grid a -> [(Direction,a)]
+neuNeigh (Grid up (Line left _ right) down) = catMaybes [u,d,l,r]
+  where
+    u = case up of
+      []           -> Nothing
+      Line _ x _:_ -> Just (Up,x)
+    d = case down of
+      []           -> Nothing
+      Line _ x _:_ -> Just (Down,x)
+    l = case left of
+      []           -> Nothing
+      x:_          -> Just (Left,x)
+    r = case right of
+      []           -> Nothing
+      x:_          -> Just (Right,x)
+
+
+neuConfs :: Eq a => Grid a -> [(Direction,Grid a)]
+neuConfs g = filter ((/=g).snd) . map (\d -> (d ,moveGrid d g)) $ dirs
+
+inv :: Direction -> Direction
+inv Left = Right
+inv Up   = Down
+inv Right= Left
+inv Down = Up
+
+compre x y = case (x >>= molDir,y >>= molDir) of
+  (Nothing, Nothing) -> Nothing
+  (_  ,     Nothing) -> x
+  (Nothing, _      ) -> y
+  (mdx,mdy)          -> if biggersndM mdx mdy == mdx then x else y
+
+instance (Ord a,Eq b) => Ord (Grid (Maybe (b,a))) where
+  (<=) f g = (snd <$> extract f) <= (snd <$> extract g)
+
+instance Ord Direction where
+  (<=) Left Right = True
+  (<=) Up Down    = True
+  (<=) Left Up    = True
+  (<=) Left Down  = True
+  (<=) Right Up   = True
+  (<=) Right Down = True
+  (<=) Left Left  = True
+  (<=) Right Right= True
+  (<=) Down Down  = True
+  (<=) Up   Up    = True
+  (<=) _     _    = False
+
+updateNuc :: Grid (Maybe (Nucleotide,Direction)) -> Maybe Nucleotide
+updateNuc g = case extract g of
+  Nothing -> (fst<$>). join . (extract<$>) . foldr (compre.Just . snd) Nothing . sort . filter (\(dir, gr) -> (Just $ inv dir) == (fst <$> (molDir gr))) $ neuConfs g
+  Just x -> case inv . fst <$> molDir g of
+    z | isNothing z -> Just . fst $ x
+      | (z == (_bond3 . fst $ x)) ||  (z == (_bond5 . fst $ x)) -> z >>= (fst<$>). extract . flip moveGrid g
+      | otherwise   -> Nothing
+
+
+simulationNIO0 = simulateIO (InWindow "RNA" (1366, 768) (0,0)) white 1 sampleNGrid2 (return.draw) sim
+  where sim _ _ g =
+          (updateNuc <<=) <$> diffusion g
+
+
+simulationNIO = simulateIO (InWindow "RNA" (1366, 768) (0,0)) white 1 sampleNGrid (return.draw) sim
+  where sim _ _ g =
+          (updateNuc <<=) <$> diffusion g

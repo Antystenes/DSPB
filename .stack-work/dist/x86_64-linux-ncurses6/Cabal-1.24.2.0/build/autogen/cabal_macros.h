@@ -35,6 +35,13 @@
   (major1) == 4 && (major2) <  15 || \
   (major1) == 4 && (major2) == 15 && (minor) <= 1)
 
+/* package random-1.1 */
+#define VERSION_random "1.1"
+#define MIN_VERSION_random(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  1 || \
+  (major1) == 1 && (major2) == 1 && (minor) <= 0)
+
 /* package ansi-terminal-0.6.2.3 */
 #define VERSION_ansi_terminal "0.6.2.3"
 #define MIN_VERSION_ansi_terminal(major1,major2,minor) (\
@@ -98,7 +105,7 @@
   (major1) == 2 && (major2) <  27 || \
   (major1) == 2 && (major2) == 27 && (minor) <= 0)
 
-#define CURRENT_COMPONENT_ID "DSPB-0.1.0.0-IzuWE0A9uXqKGPPquzCxk7"
+#define CURRENT_COMPONENT_ID "DSPB-0.1.0.0-8DbiYz7G17CFksfrEx0ZXk"
 
-#define CURRENT_PACKAGE_KEY "DSPB-0.1.0.0-IzuWE0A9uXqKGPPquzCxk7"
+#define CURRENT_PACKAGE_KEY "DSPB-0.1.0.0-8DbiYz7G17CFksfrEx0ZXk"
 
